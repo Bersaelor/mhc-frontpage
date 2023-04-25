@@ -1,9 +1,13 @@
 import type { Component } from 'solid-js';
 import { Typography } from '@suid/material';
 import { Container } from "@suid/material"
+import Box from '@suid/material/Box';
 import Stack from '@suid/material/Stack';
 
 import Technologies from '../Technologies/Technologies';
+import Works from '../Works/Works';
+import Talks from '../Talks/Talks';
+import Social from '../Social/Social';
 import Footer from '../Footer/Footer';
 import photo from './photo.jpeg'
 
@@ -25,6 +29,14 @@ const Home: Component = () => {
 
         <Technologies />
         
+        <Box p={1} />
+
+        <Works />
+
+        <Talks />
+
+        <Social />
+
       </Container>
 
       <Footer />

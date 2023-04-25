@@ -5,5 +5,5 @@ export type Work = {
   role: string
   release: string
   url: string
-  thumbnauil: string
+  thumbnail: string
 }

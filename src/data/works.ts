@@ -1,4 +1,6 @@
-{
+import type { Work } from "../types/Work"
+
+const works: { [key: string]: Work } = {
   "tactica": {
     "title": "Tactica",
     "text": "Mobile turn-based strategy game with procedurally generated maps, 3D models and challenging AI. Custom 3D model pipeline from Blender to OpenGL ES as game was released before any mobile 3D engines became available. Multiplayer-Server built in python.",
@@ -180,3 +182,5 @@
     "thumbnail": "logo.png"
   }
 }
+
+export default works;

@@ -6,8 +6,13 @@ export const desktopQuery = `@media only screen and (min-width: 600px) and (min-
 const theme = createTheme({
   typography: {
     h4: {
+      fontSize: '1.75rem',
       fontWeight: 600,
-    }
+    },
+    h5: {
+      fontSize: '1.5rem',
+      fontWeight: 600,
+    },
   },
   palette: {
     primary: {
