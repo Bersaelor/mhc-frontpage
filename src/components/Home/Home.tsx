@@ -2,8 +2,9 @@ import type { Component } from 'solid-js';
 import { Typography } from '@suid/material';
 import { Container } from "@suid/material"
 import Stack from '@suid/material/Stack';
-import Footer from '../Footer/Footer';
 
+import Technologies from '../Technologies/Technologies';
+import Footer from '../Footer/Footer';
 import photo from './photo.jpeg'
 
 const Home: Component = () => {
@@ -22,6 +23,7 @@ const Home: Component = () => {
           </div>
         </Stack>
 
+        <Technologies />
         
       </Container>
 
