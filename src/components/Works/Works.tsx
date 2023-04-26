@@ -21,8 +21,8 @@ const SquareGrid = styled('div')(({ theme }) => ({
 
 const Works: Component = () => {
   return (
-    <Box mt={2} component='section'>
-      <Typography variant="h4">
+    <Box component='section'>
+      <Typography variant="h4" mb={2}>
         Past & Present Projects
       </Typography>
 

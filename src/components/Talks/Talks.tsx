@@ -2,6 +2,7 @@ import type { Component } from 'solid-js';
 import { Typography } from '@suid/material';
 import Box from '@suid/material/Box';
 import Grid from '@suid/material/Grid';
+import Stack from '@suid/material/Stack';
 
 const Talks: Component = () => {
   return (
@@ -11,14 +12,20 @@ const Talks: Component = () => {
       </Typography>
 
       <Grid justifyContent="center" container spacing={3} mt={0}>
-        <Grid item xs={4} md={2}>
-          <a href="https://youtu.be/CwcEjxRtn18">KDTree for Functional Swift Conference</a>
+        <Grid item xs={12} md={4}>
+          <Stack direction='row' justifyContent="center">
+            <iframe src="https://www.youtube.com/embed/CwcEjxRtn18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+          </Stack>
         </Grid>
-        <Grid item xs={4} md={2}>
-          <a href="https://www.youtube.com/watch?v=xA3ZYt5S6iA">"How server side and mobile Swift can benefit from each other" for Server-Side Swift Conference</a>
+        <Grid item xs={12} md={4}>
+          <Stack direction='row' justifyContent="center">
+            <iframe src="https://www.youtube.com/embed/xA3ZYt5S6iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+          </Stack>
         </Grid>
-        <Grid item xs={4} md={2}>
-          <a href="https://www.youtube.com/watch?v=51PJjrh9yTA">Fitting Stars into ARKit for MobiusConf</a>
+        <Grid item xs={12} md={4}>
+          <Stack direction='row' justifyContent="center">
+            <iframe src="https://www.youtube.com/embed/51PJjrh9yTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+          </Stack>
         </Grid>
       </Grid>
     </Box>
