@@ -4,6 +4,7 @@ import { Container } from "@suid/material"
 import Box from '@suid/material/Box';
 import Stack from '@suid/material/Stack';
 
+import Topheader from './TopHeader/TopHeader';
 import PersonHeader from '../PersonHeader/PersonHeader';
 import Technologies from '../Technologies/Technologies';
 import Works from '../Works/Works';
@@ -14,11 +15,12 @@ import Footer from '../Footer/Footer';
 const Home: Component = () => {
   return (
     <>
+      <Topheader />
+      
+      <PersonHeader />
+
       <Container maxWidth="lg" >
-        <Stack direction='column' spacing={6} alignItems='stretch'>
-
-          <PersonHeader />
-
+        <Stack direction='column' mt={4} spacing={6} alignItems='stretch'>
           <Works />
 
           <Technologies />
@@ -27,9 +29,11 @@ const Home: Component = () => {
 
           <Social />
 
-          <Box p={3} />          </Stack>
-
+          <Box p={3} />
+        </Stack>
       </Container>
+
+
       <Footer />
     </>
   );
