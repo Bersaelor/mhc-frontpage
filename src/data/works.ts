@@ -96,7 +96,7 @@ const works: { [key: string]: Work } = {
     "text": "AR visualization of the Solar system and star constellations. Holiday project that ended up becoming the LooC AR Try-On app",
     "tech": "SceneKit, ARKit, Swift",
     "role": "developer, designer, idea",
-    "release": "-",
+    "release": "2016",
     "url": "https://www.youtube.com/shorts/y8YNZEFhtME",
     "thumbnail": "logo.png"
   },
@@ -172,7 +172,7 @@ const works: { [key: string]: Work } = {
     "release": "2023",
     "thumbnail": "logo.png"
   },
-  "uhere": {
+  "urhere": {
     "title": "URHERE Art Performance Streaming Site",
     "text": "Media streaming website for art performances and audio walks in New York. With user management, stripe integration for payment and dynamic content loading",
     "tech": "Solid.js frontend, AWS backend, Stripe payment integration",
