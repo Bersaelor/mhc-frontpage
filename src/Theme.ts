@@ -1,4 +1,5 @@
 import { createTheme } from "@suid/material/styles";
+import { grey, indigo, deepPurple } from '@suid/material/colors';
 
 export const mobileQuery = `@media only screen and (max-width: 480px)`;
 export const desktopQuery = `@media only screen and (min-width: 600px) and (min-height: 600px)`;
@@ -22,11 +23,13 @@ const theme = createTheme({
       main: "#851948",
     },
     text: {
-      primary: "#232323",
+      primary: '#1f2d1b',
       secondary: '#8e8e8e'
     },
     background: {
       default: '#ffffff',
+      paper: '#ffffff',
+      footer: '#c8d7d2',
     },
   },
   mobileQuery: mobileQuery,

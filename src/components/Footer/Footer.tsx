@@ -11,7 +11,7 @@ const StickyFooter = styled('footer')(({ theme }) => ({
   left: 0,
   height: '2.5rem',
   lineHeight: '2.5rem',
-  backgroundColor: grey[200],
+  backgroundColor: (theme.palette.background as any).footer,
   '& a': {
     textDecoration: 'none',
   },
