@@ -69,12 +69,13 @@ const ResponsiveImage = styled('img')(({ theme }) => ({
 
 type Props = {
   key: string,
-  work: Work
+  work: Work,
+  onWorkSelected: (key: string) => void
 }
 
 const WorkCell: Component<Props> = (props) => {
   return (
-    <Cell>
+    <Cell onClick={() => props.onWorkSelected(props.key)}>
       <For each={[1, 2, 3, 4, 5, 6, 7, 8, 9]}>
         {(i) => <Tilt />}
       </For>

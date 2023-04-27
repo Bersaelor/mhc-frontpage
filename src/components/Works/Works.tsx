@@ -20,7 +20,12 @@ const SquareGrid = styled('div')(({ theme }) => ({
   }
 }))
 
-const Works: Component = () => {
+
+type Props = {
+  works: { [key: string]: Work},
+  onWorkSelected: (key: string) => void
+}
+const Works: Component<Props> = (props) => {
   return (
       <Box component='section'>
         <GradientTitle variant="h4" mb={2}>
@@ -29,10 +34,9 @@ const Works: Component = () => {
 
         <SquareGrid>
           {Object.entries(workData).sort(((a: [string, Work], b: [string, Work]) => a[1].release < b[1].release ? 1 : -1)).map(([key, work]) => (
-            <WorkCell key={key} work={work} />
+            <WorkCell key={key} work={work} onWorkSelected={props.onWorkSelected}/>
           ))}
         </SquareGrid>
-
       </Box>
   );
 };
