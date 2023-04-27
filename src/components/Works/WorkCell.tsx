@@ -23,7 +23,7 @@ const Cell = styled('div')(({ theme }) => ({
   },
 }))
 
-const Tilt = styled('span')(({ theme }) => {
+export const Tilt = styled('span')(({ theme }) => {
   const d = 20;
 
   return {
@@ -41,15 +41,15 @@ const Tilt = styled('span')(({ theme }) => {
     '&:nth-child(7)': { top: 0, left: '66.666%' },
     '&:nth-child(8)': { top: '33.333%', left: '66.666%' },
     '&:nth-child(9)': { top: '66.666%', left: '66.666%' },
-    '&:nth-child(1):hover ~ img': { transform: `rotateX(${d}deg) rotateY(-${d}deg)` },
-    '&:nth-child(2):hover ~ img': { transform: `rotateX(0deg)    rotateY(-${d}deg)` },
-    '&:nth-child(3):hover ~ img': { transform: `rotateX(-${d}deg) rotateY(-${d}deg)` },
-    '&:nth-child(4):hover ~ img': { transform: `rotateX(${d}deg) rotateY(0deg)` },
-    '&:nth-child(5):hover ~ img': { transform: `rotateX(0deg) rotateY(0deg)` },
-    '&:nth-child(6):hover ~ img': { transform: `rotateX(-${d}deg) rotateY(0deg)` },
-    '&:nth-child(7):hover ~ img': { transform: `rotateX(${d}deg) rotateY(${d}deg)` },
-    '&:nth-child(8):hover ~ img': { transform: `rotateX(0deg) rotateY(${d}deg)` },
-    '&:nth-child(9):hover ~ img': { transform: `rotateX(-${d}deg) rotateY(${d}deg)` },
+    '&:nth-child(1):hover ~ .tilt-box': { transform: `rotateX(${d}deg) rotateY(-${d}deg)` },
+    '&:nth-child(2):hover ~ .tilt-box': { transform: `rotateX(0deg)    rotateY(-${d}deg)` },
+    '&:nth-child(3):hover ~ .tilt-box': { transform: `rotateX(-${d}deg) rotateY(-${d}deg)` },
+    '&:nth-child(4):hover ~ .tilt-box': { transform: `rotateX(${d}deg) rotateY(0deg)` },
+    '&:nth-child(5):hover ~ .tilt-box': { transform: `rotateX(0deg) rotateY(0deg)` },
+    '&:nth-child(6):hover ~ .tilt-box': { transform: `rotateX(-${d}deg) rotateY(0deg)` },
+    '&:nth-child(7):hover ~ .tilt-box': { transform: `rotateX(${d}deg) rotateY(${d}deg)` },
+    '&:nth-child(8):hover ~ .tilt-box': { transform: `rotateX(0deg) rotateY(${d}deg)` },
+    '&:nth-child(9):hover ~ .tilt-box': { transform: `rotateX(-${d}deg) rotateY(${d}deg)` },
   }
 })
 
@@ -78,7 +78,7 @@ const WorkCell: Component<Props> = (props) => {
       <For each={[1, 2, 3, 4, 5, 6, 7, 8, 9]}>
         {(i) => <Tilt />}
       </For>
-      <ResponsiveImage src={`imgs/${props.key}/${props.work.thumbnail}` } alt={props.work.title} />
+      <ResponsiveImage class='tilt-box' src={`imgs/${props.key}/${props.work.thumbnail}` } alt={props.work.title} />
     </Cell>
   );
 };

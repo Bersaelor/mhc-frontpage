@@ -22,6 +22,18 @@ const HStack = styled('div')(({ theme }) => ({
   gap: theme.spacing(2)
 }))
 
+const PaperHolder = styled('div')(({ theme }) => ({
+  position: 'relative',
+
+  transition: 'all 0.6s ease-out',
+
+  '&:hover': {
+    transition: 'all 0.3s linear',
+    transform: 'scale(1.1)',
+    zIndex: 1,
+  },
+}))
+
 const Technologies: Component = () => {
   return (
     <Box mt={2} component='section'>
@@ -30,43 +42,55 @@ const Technologies: Component = () => {
       </GradientTitle>
 
       <HStack>
-        <Paper>
-          <Box p={1} pb={0} pt={1}>
-            <img height="34px" src={ios} alt="iOS" />
-          </Box>
-        </Paper>
+        <PaperHolder>
+          <Paper>
+            <Box class="tilt-box" p={1} pb={0} pt={1}>
+              <img height="34px" src={ios} alt="iOS" />
+            </Box>
+          </Paper>
+        </PaperHolder>
 
-        <Paper>
-          <Box p={1} pb={0} pt={1}>
-            <img height="34px" src={macos} alt="macOS" />
-          </Box>
-        </Paper>
+        <PaperHolder>
+          <Paper>
+            <Box p={1} pb={0} pt={1}>
+              <img height="34px" src={macos} alt="macOS" />
+            </Box>
+          </Paper>
+        </PaperHolder>
 
-        <Stack direction="row" spacing={0.25} alignItems="center">
-          <img height="48px" src={react} alt="ReactJS" />
-          <Typography sx={{ fontSize: '28px'}} >
-            <b>React</b>
-          </Typography>
-        </Stack>
+        <PaperHolder>
+          <Stack direction="row" spacing={0.25} alignItems="center">
+            <img height="48px" src={react} alt="ReactJS" />
+            <Typography sx={{ fontSize: '28px' }} >
+              <b>React</b>
+            </Typography>
+          </Stack>
+        </PaperHolder>
 
-        <Stack direction="row" spacing={0.25} mx={1} alignItems="center">
-          <img height="48px" src={solid} alt="SolidJS" />
-          <Typography sx={{ fontSize: '28px' }} >
-            SOLID<b>JS</b>
-          </Typography>
-        </Stack>
+        <PaperHolder>
+          <Stack direction="row" spacing={0.25} mx={1} alignItems="center">
+            <img height="48px" src={solid} alt="SolidJS" />
+            <Typography sx={{ fontSize: '28px' }} >
+              SOLID<b>JS</b>
+            </Typography>
+          </Stack>
+        </PaperHolder>
 
-        <Paper>
-          <Box ml={1} mr={1} pt={1}>
-            <img height="36px" src={unity} alt="Unity" />
-          </Box>
-        </Paper>
+        <PaperHolder>
+          <Paper>
+            <Box ml={1} mr={1} pt={1}>
+              <img height="36px" src={unity} alt="Unity" />
+            </Box>
+          </Paper>
+        </PaperHolder>
 
-          <Paper sx={{ maxWidth: '120px' }}>
+        <PaperHolder sx={{ maxWidth: '120px' }}>
+          <Paper>
             <Box px={1} pt={1}>
               <img height="36px" src={aws} alt="AWS" />
             </Box>
           </Paper>
+        </PaperHolder>
       </HStack>
     </Box>
   );
