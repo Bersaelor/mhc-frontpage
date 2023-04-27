@@ -2,13 +2,14 @@ import type { Component } from 'solid-js';
 import { Typography } from '@suid/material';
 import Box from '@suid/material/Box';
 import Grid from '@suid/material/Grid';
+import GradientTitle from '../GradientTitle/GradientTitle';
 
 const Social: Component = () => {
   return (
     <Box mt={2} component='section'>
-      <Typography variant="h5">
+      <GradientTitle variant="h5">
         Contact
-      </Typography>
+      </GradientTitle>
 
       <Grid justifyContent="center" container spacing={3} mt={0}>
         <Grid sx={{textAlign: 'center'}} item xs={12}>

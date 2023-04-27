@@ -2,9 +2,9 @@ import type { Component } from 'solid-js';
 import { styled } from '@suid/material/styles';
 import { Typography } from '@suid/material';
 import Box from '@suid/material/Box';
-import Grid from '@suid/material/Grid';
 import Paper from '@suid/material/Paper';
 import Stack from '@suid/material/Stack';
+import GradientTitle from '../GradientTitle/GradientTitle';
 
 import aws from './aws.svg';
 import ios from './ios.svg';
@@ -25,9 +25,9 @@ const HStack = styled('div')(({ theme }) => ({
 const Technologies: Component = () => {
   return (
     <Box mt={2} component='section'>
-      <Typography variant="h4" mb={2}>
+      <GradientTitle variant="h4" mb={2}>
         Technologies
-      </Typography>
+      </GradientTitle>
 
       <HStack>
         <Paper>

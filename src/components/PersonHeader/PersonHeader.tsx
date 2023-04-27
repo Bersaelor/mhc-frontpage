@@ -8,15 +8,15 @@ import photo from './photo.jpeg'
 
 const PersonHeader: Component = () => {
   return (
-    <Box backgroundColor='#0f5879'>
+    <Box>
       <Stack pt={2} direction='row' justifyContent='center'>
         <Stack m={2} gap={2} direction='row' justifyContent='center' alignItems='center'>
           <img height='160px' src={photo} alt="photo of Konrad" />
           <div>
-            <Typography variant="h5" color="#e8eaf8" mb={2}>
+            <Typography variant="h5" mb={2}>
               Hi, my name Konrad.
             </Typography>
-            <Typography variant="h6" color="#e8eaf8" sx={{ maxWidth: '400px' }}>
+            <Typography variant="h6" sx={{ maxWidth: '400px' }}>
               Through my company <b>mathHeartCode UG(haftungsbeschränkt)</b> I offer services as a software developer & consultant.
             </Typography>
           </div>

@@ -3,13 +3,14 @@ import { Typography } from '@suid/material';
 import Box from '@suid/material/Box';
 import Grid from '@suid/material/Grid';
 import Stack from '@suid/material/Stack';
+import GradientTitle from '../GradientTitle/GradientTitle';
 
 const Talks: Component = () => {
   return (
     <Box mt={2} component='section'>
-      <Typography variant="h4">
+      <GradientTitle variant="h4">
         Talks
-      </Typography>
+      </GradientTitle>
 
       <Grid justifyContent="center" container spacing={3} mt={0}>
         <Grid item xs={12} md={4}>

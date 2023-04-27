@@ -4,21 +4,20 @@ import { Container } from "@suid/material"
 import { Typography } from '@suid/material';
 import Stack from '@suid/material/Stack';
 import { Box } from "@suid/material"
-
-import photo from './photo.jpeg'
+import GradientTitle from '../GradientTitle/GradientTitle';
 
 const Topheader: Component = () => {
   return (
-    <Box backgroundColor='#0d2261'>
+    <Box>
       <Container maxWidth="lg" >
         <Stack direction='row' justifyContent='space-between'>
-          <Typography variant="h5" color="#e8eaf8">
+          <GradientTitle variant="h6" >
             mathHeartCode UG
-          </Typography>
+          </GradientTitle>
 
-          <Typography variant="h5" color="#e8eaf8" href="mailto:konrad@mathheartcode.com" component='a'>
+          <GradientTitle variant="h6" color="#e8eaf8" href="mailto:konrad@mathheartcode.com" component='a'>
             Contact
-          </Typography>
+          </GradientTitle>
         </Stack>            </Container>
 
 

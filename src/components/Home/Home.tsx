@@ -4,7 +4,7 @@ import { Container } from "@suid/material"
 import Box from '@suid/material/Box';
 import Stack from '@suid/material/Stack';
 
-import Topheader from './TopHeader/TopHeader';
+import Topheader from '../TopHeader/TopHeader';
 import PersonHeader from '../PersonHeader/PersonHeader';
 import Technologies from '../Technologies/Technologies';
 import Works from '../Works/Works';

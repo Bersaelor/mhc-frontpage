@@ -4,7 +4,7 @@ import { Typography } from '@suid/material';
 import Box from '@suid/material/Box';
 import WorkCell from './WorkCell.jsx';
 import type { Work } from '../../types/Work';
-import { Container } from "@suid/material"
+import GradientTitle from '../GradientTitle/GradientTitle';
 
 import workData from '../../data/works.js';
 
@@ -23,9 +23,9 @@ const SquareGrid = styled('div')(({ theme }) => ({
 const Works: Component = () => {
   return (
       <Box component='section'>
-        <Typography variant="h4" mb={2}>
+        <GradientTitle variant="h4" mb={2}>
           Past & Present Projects
-        </Typography>
+        </GradientTitle>
 
         <SquareGrid>
           {Object.entries(workData).sort(((a: [string, Work], b: [string, Work]) => a[1].release < b[1].release ? 1 : -1)).map(([key, work]) => (

@@ -8,11 +8,11 @@ const theme = createTheme({
   typography: {
     h4: {
       fontSize: '1.75rem',
-      fontWeight: 600,
+      fontWeight: 500,
     },
     h5: {
       fontSize: '1.5rem',
-      fontWeight: 600,
+      fontWeight: 500,
     },
   },
   palette: {
@@ -23,12 +23,12 @@ const theme = createTheme({
       main: "#851948",
     },
     text: {
-      primary: '#1f2d1b',
+      primary: '#ffffff',
       secondary: '#8e8e8e'
     },
     background: {
-      default: '#e2f5f7',
-      paper: '#ffffff',
+      default: '#e2f5f700',
+      paper: '#ffffff11',
       footer: '#c8d7d2',
     },
   },
