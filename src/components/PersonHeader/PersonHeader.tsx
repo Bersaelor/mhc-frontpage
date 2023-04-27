@@ -14,7 +14,7 @@ const PersonHeader: Component = () => {
           <img height='160px' src={photo} alt="photo of Konrad" />
           <div>
             <Typography variant="h5" mb={2}>
-              Hi, my name Konrad.
+              Hi, my name is Konrad.
             </Typography>
             <Typography variant="h6" sx={{ maxWidth: '400px' }}>
               Through my company <b>mathHeartCode UG(haftungsbeschränkt)</b> I offer services as a software developer & consultant.
