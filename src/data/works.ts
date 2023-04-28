@@ -4,182 +4,202 @@ const works: { [key: string]: Work } = {
   "tactica": {
     "title": "Tactica",
     "text": "Mobile turn-based strategy game with procedurally generated maps, 3D models and challenging AI. Custom 3D model pipeline from Blender to OpenGL ES as game was released before any mobile 3D engines became available. Multiplayer-Server built in python.",
-    "tech": "UIKit, OpenGL, Blender",
+    "techs": ["UIKit", "OpenGL", "Blender"],
     "role": "developer, designer, idea",
     "release": "2009",
     "url": "https://www.youtube.com/watch?v=MAYVPjAc_9s",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC", "C", "C++"]
   },
   "ibeat": {
     "title": "iBeat the Metronome",
     "text": "Metronome app with variable sounds and metres. 900'000 downloads total.",
-    "tech": "UIKit, Audacity",
+    "techs": ["UIKit", "Audacity"],
     "role": "developer, designer, idea",
     "release": "2010",
     "url": "https://apptopia.com/ios/app/398984403/about",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC"]
   },
   "isogon": {
     "title": "ISOGON Fenster Konfigurator",
     "text": "AR app before AR became a thing. ISOGON is a Berlin based window-glass manufacturer, the app allows previewing of structured glasses in 3D.",
-    "tech": "OpenGL ES, UIKit, a lot of custom C++ code utilizing PVRTools by Imagination Technologies",
+    "techs": ["OpenGL ES", "UIKit", "a lot of custom C++ code utilizing PVRTools by Imagination Technologies"],
     "role": "sole developer",
     "release": "2011",
     "url": "https://apps.apple.com/de/app/fenster/id455902895?l=en",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC", "C++"]
   },
   "iceyetest": {
     "title": "IC the Eyetest",
     "text": "Collaboration with a Berlin-based ophthalmologist, Mobile eye test for iPhone&iPad. Several weeks in the #10 best-selling medical apps after release. Featured on TV.",
-    "tech": "UIKit, CoreGraphics, Bonjour",
+    "techs": ["UIKit", "CoreGraphics", "Bonjour"],
     "role": "developer, designer",
     "release": "2011",
     "url": "https://www.ipad-tipps.de/ipad-apps-oculus-testen-sie-ihre-sehscharfe-direkt-uber-das-ipad/",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC"]
   },
   "nickjr": {
     "title": "Nick Jr. Watch & Learn",
     "text": "iPhone & iPad App for VIMN Germany, won a Bronze Lovie Award 2014 - Mobile Handheld: Education & Reference",
-    "tech": "UIKit",
+    "techs": ["UIKit", "AVFoundation"],
     "role": "sole developer",
     "release": "2012",
     "url": "https://winners.lovieawards.com/#!y=2014&m=309",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC"]
   },
   "mtvutt": {
     "title": "MTV Under The Thumb",
     "text": "iPhone & iPad App for VIMN Germany, maintenance of the iOS client after original team was aquired by third party.",
-    "tech": "UIKit",
+    "techs": ["UIKit", "AVFoundation"],
     "role": "developer",
     "release": "2013",
     "url": "https://news.cision.com/de/viacomcbs-networks-gsa/r/mtv-baut-mobiles-tv-erlebnis-aus--lineare-premium-tv-kanale-erweitern-mtv-under-the-thumb-app,c9413537",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC"]
   },
   "formicarium": {
     "title": "Formicarium",
     "text": "Ecosystem simulation and ants strategy game inspired by Dwarf Fortress. Core ecosystem simulation running in C++ with a decoupled UI using SpriteKit",
-    "tech": "C++, SpriteKit",
+    "techs": ["Boost", "C++ std", "SpriteKit"],
     "role": "developer, idea",
     "release": "2015",
     "url": "https://www.kickstarter.com/projects/1732304023/formicarium-a-strategy-simulation-sandbox-game/?ref=kicktraq",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC", "C++"]
   },
   "playplex": {
     "title": "Viacom Play Plex",
     "text": "White-Label media streaming for MTV, TVLand, BET and Comedy Central outside of the US.",
-    "tech": "UIKit, Swift",
+    "techs": ["UIKit", "AVFoundation"],
     "role": "developer, architect",
     "release": "2015",
     "url": "https://www.mediaweek.com.au/viacom-launches-viacom-play-plex-suite-of-mobile-tv-apps/",
-    "thumbnail": "logo.jpg"
+    "thumbnail": "logo.jpg",
+    "langs": ["Swift"]
   },
   "nickelodeon": {
     "title": "Nickelodeon International App",
     "text": "International version of the iOS Nickelodeon App.",
-    "tech": "UIKit",
+    "techs": ["UIKit", "AVFoundation"],
     "role": "lead developer",
     "release": "2015",
     "url": "https://apps.apple.com/ch/app/nickelodeon-play/id977678950",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["ObjC", "Swift"]
   },
   "looceyetest": {
     "title": "LooC Mobile Eye Test",
     "text": "Complete rewrite of the eyetest app in Swift. New Color Vision Test added.",
-    "tech": "UIKit, Swift, lot's of CoreGraphics and a Swift implementation of KDTree's for the color vision test",
+    "techs": ["UIKit", "Swift", "lot's of CoreGraphics and a Swift implementation of KDTree's for the color vision test"],
     "role": "CTO",
     "release": "2017",
     "url": "https://apps.apple.com/us/app/looc-mobile-eye-test/id405950873",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["Swift", "GLSL"]
   },
   "universeAR": {
     "title": "Universe AR",
     "text": "AR visualization of the Solar system and star constellations. Holiday project that ended up becoming the LooC AR Try-On app",
-    "tech": "SceneKit, ARKit, Swift",
+    "techs": ["SceneKit", "ARKit", "Swift"],
     "role": "developer, designer, idea",
     "release": "2016",
     "url": "https://www.youtube.com/shorts/y8YNZEFhtME",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["Swift"]
   },
   "loocar": {
     "title": "LooC AR Try-On",
     "text": "Virtual Try-On of glasses in AR.",
-    "tech": "UIKit, SceneKit, ARKit, Swift",
+    "techs": ["UIKit", "SceneKit", "ARKit", "Swift"],
     "role": "CTO",
     "release": "2019",
     "url": "https://apps.apple.com/us/app/my-looc-virtual-try-on/id1463380262",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["Swift"]
   },
   "looccms": {
     "title": "LooC Content Management System",
     "text": "Cloud-based management of the 3D models for LooC. Frontend management site for opticians and managers with a serverless backend based on AWS.",
-    "tech": "React.js, Node.js, AWS Lambda, Dynamodb, Cloudfront, Blender",
+    "techs": ["React.js", "Node.js", "AWS Lambda Dynamodb Cloudfront", "Blender"],
     "role": "CTO",
     "url": "https://cms.looc.io",
     "release": "2020",
-    "thumbnail": "CMS_Logo_icon.svg"
+    "thumbnail": "CMS_Logo_icon.svg",
+    "langs": ["TS", "JS", "Python"]
   },
   "grafixandroid": {
     "title": "Grafix 4.0 Android",
     "text": "Virtual Try-On of glasses in AR on Android.",
-    "tech": "Unity, Android, ARCore",
+    "techs": ["Unity", "Android", "ARCore"],
     "role": "Client of LooC GmbH",
     "url": "https://play.google.com/store/apps/details?id=de.mom.grafix",
     "release": "2021",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["C#"]
   },
   "loocwebgl": {
     "title": "LooC WebGL Try-On",
     "text": "Virtual Try-On of glasses in the browser.",
-    "tech": "Unity, WebGL, OpenCV",
+    "techs": ["Unity", "WebGL", "OpenCV"],
     "role": "CTO",
     "url": "https://test.looc.io/tryon/index.html",
     "release": "2021",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["C#"]
   },
   "reframd": {
     "title": "Reframd iOS App",
     "text": "Virtual Try-On of glasses in AR. Measuring of faces allowing Reframd to create customized frames.",
-    "tech": "UIKit, SceneKit, ARKit, Swift",
+    "techs": ["UIKit", "SceneKit", "ARKit", "Swift"],
     "role": "Client-project of LooC GmbH",
     "url": "https://www.reframd.com",
     "release": "2021",
-    "thumbnail": "Icon.jpg"
+    "thumbnail": "Icon.jpg",
+    "langs": ["Swift"]
   },
   "eo": {
     "title": "Edel-Optics iOS App",
     "text": "Measuring of faces and centration of lenses. Allowing Edel-Optics GmbH to customize orders on their web shop.",
-    "tech": "UIKit, SceneKit, ARKit, Swift",
+    "techs": ["UIKit", "SceneKit", "ARKit", "Swift"],
     "role": "Client-project of LooC GmbH",
     "url": "https://apps.apple.com/app/edel-optics/id1594244005",
     "release": "2022",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["Swift"]
   },
   "riddler": {
     "title": "The Riddler",
     "text": "Interactive Multi-Media AR-Installation for CSAIL MIT. Permanent digital world running on a wall installation, users can interact using their phones in AR.",
-    "tech": "Unity, Photon, ARKit, ARFoundation",
+    "techs": ["Unity", "Photon", "ARKit", "ARFoundation"],
     "role": "sole developer",
     "url": "https://www.csail.mit.edu/news/magical-garden-gates-tower",
     "release": "2022",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["C#", "GLSL"]
   },
   "recast": {
     "title": "Recast Chrome Extension & Player SSR page",
     "text": "Helping my friends of letsrecast.ai with a chrome extension frontend in Solid.js as well as a server-side rendered Solid.js dynamic page for individual recasts.",
-    "tech": "Solid.js, React.js, AWS Lambda",
+    "techs": ["Solid.js", "React.js", "AWS Lambda, CF, S3, DynamoDB"],
     "role": "developer",
     "url": "https://www.letsrecast.ai",
     "release": "2023",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["TS", "JS"]
   },
   "urhere": {
     "title": "URHERE Art Performance Streaming Site",
     "text": "Media streaming website for art performances and audio walks in New York. With user management, stripe integration for payment and dynamic content loading",
-    "tech": "Solid.js frontend, AWS backend, Stripe payment integration",
+    "techs": ["Solid.js frontend", "AWS Lambda", "CF", "S3", "DynamoDB", "Stripe payment integration"],
     "role": "architect, sole backend, lead frontend",
     "url": "https://urhere.art/",
     "release": "2023",
-    "thumbnail": "logo.png"
+    "thumbnail": "logo.png",
+    "langs": ["TS", "JS"]
   }
 }
 

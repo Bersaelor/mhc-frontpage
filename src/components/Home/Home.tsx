@@ -5,7 +5,7 @@ import { styled } from '@suid/material/styles';
 import { Container } from "@suid/material"
 import Box from '@suid/material/Box';
 import Stack from '@suid/material/Stack';
-import Modal from '@suid/material/Modal';
+import { Grow } from "@suid/material"
 import Dialog from '@suid/material/Dialog';
 
 import Topheader from '../TopHeader/TopHeader';
@@ -24,8 +24,9 @@ const StyledModal = styled(Dialog)(({ theme }) => ({
     backgroundColor: '#00000044'
   },
   '.MuiDialog-paper': {
+    borderRadius: theme.spacing(2),
     backgroundColor: '#03575aaa',
-    backdropFilter: 'blur(4px)',
+    backdropFilter: 'blur(8px)',
   }
 }))
 
@@ -77,12 +78,20 @@ const Home: Component = () => {
         <StyledModal
           open={work() != undefined}
           onClose={handleClose}
+          TransitionComponent={Grow}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          { work() && <WorkDetail work={work()!} onClose={handleClose} />}
-        </StyledModal>
-      </Container>
+          {work() && (
+            // <Grow 
+            //   in={work() != undefined}
+            //   {...(work() != undefined ? { timeout: 300 } : {})}
+            // >
+              <WorkDetail work={work()!} onClose={handleClose} />
+            // </Grow>
+            )}
+        </StyledModal >
+      </Container >
       <Footer />
     </>
   );

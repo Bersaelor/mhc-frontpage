@@ -5,6 +5,7 @@ import Box from '@suid/material/Box';
 import WorkCell from './WorkCell.jsx';
 import type { Work } from '../../types/Work';
 import GradientTitle from '../GradientTitle/GradientTitle';
+import MoreHorizRoundedIcon from '@suid/icons-material/MoreHorizRounded';
 
 import workData from '../../data/works.js';
 
@@ -20,24 +21,36 @@ const SquareGrid = styled('div')(({ theme }) => ({
   }
 }))
 
+const LastCell = styled('div')(({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  aspectRatio: '1/1',
+}))
+
 
 type Props = {
-  works: { [key: string]: Work},
+  works: { [key: string]: Work },
   onWorkSelected: (key: string) => void
 }
 const Works: Component<Props> = (props) => {
   return (
-      <Box component='section'>
-        <GradientTitle variant="h4" mb={2}>
-          Past & Present Projects
-        </GradientTitle>
+    <Box component='section'>
+      <GradientTitle variant="h4" mb={2}>
+        Past & Present Projects
+      </GradientTitle>
 
-        <SquareGrid>
-          {Object.entries(workData).sort(((a: [string, Work], b: [string, Work]) => a[1].release < b[1].release ? 1 : -1)).map(([key, work]) => (
-            <WorkCell key={key} work={work} onWorkSelected={props.onWorkSelected}/>
-          ))}
-        </SquareGrid>
-      </Box>
+      <SquareGrid>
+        {Object.entries(workData).sort(((a: [string, Work], b: [string, Work]) => a[1].release < b[1].release ? 1 : -1)).map(([key, work]) => (
+          <WorkCell key={key} work={work} onWorkSelected={props.onWorkSelected} />
+        ))}
+        <LastCell>
+          <Box mt={3}>
+            <MoreHorizRoundedIcon fontSize='large' />
+          </Box>
+        </LastCell>
+      </SquareGrid>
+    </Box>
   );
 };
 
