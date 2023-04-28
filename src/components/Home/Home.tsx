@@ -45,7 +45,6 @@ const Home: Component = () => {
   }
 
   createEffect(() => {
-    console.log("selected: ", selected())
     if (selected()) {
       setSearchParams({ selected: selected() });
     } else {
@@ -81,7 +80,7 @@ const Home: Component = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          { work() && <WorkDetail work={work()!} />}
+          { work() && <WorkDetail work={work()!} onClose={handleClose} />}
         </StyledModal>
       </Container>
       <Footer />
