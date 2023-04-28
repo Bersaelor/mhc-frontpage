@@ -1,11 +1,12 @@
 import type { Component } from 'solid-js';
 import { createSignal, createEffect } from 'solid-js';
 import { useSearchParams } from '@solidjs/router';
-import { Typography } from '@suid/material';
+import { styled } from '@suid/material/styles';
 import { Container } from "@suid/material"
 import Box from '@suid/material/Box';
 import Stack from '@suid/material/Stack';
 import Modal from '@suid/material/Modal';
+import Dialog from '@suid/material/Dialog';
 
 import Topheader from '../TopHeader/TopHeader';
 import PersonHeader from '../PersonHeader/PersonHeader';
@@ -17,6 +18,16 @@ import Social from '../Social/Social';
 import Footer from '../Footer/Footer';
 
 import workData from '../../data/works.js';
+
+const StyledModal = styled(Dialog)(({ theme }) => ({
+  '.MuiBackdrop-root': {
+    backgroundColor: '#00000044'
+  },
+  '.MuiDialog-paper': {
+    backgroundColor: '#03575aaa',
+    backdropFilter: 'blur(4px)',
+  }
+}))
 
 const Home: Component = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -64,14 +75,14 @@ const Home: Component = () => {
 
           <Box p={3} />
         </Stack>
-        <Modal
+        <StyledModal
           open={work() != undefined}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
           { work() && <WorkDetail work={work()!} />}
-        </Modal>
+        </StyledModal>
       </Container>
       <Footer />
     </>

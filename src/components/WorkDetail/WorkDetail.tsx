@@ -1,10 +1,10 @@
 import type { Component } from 'solid-js';
 import { For } from 'solid-js';
-import Box from '@suid/material/Box';
+import Stack from '@suid/material/Stack';
 import Typography from '@suid/material/Typography';
 import { styled } from '@suid/material/styles';
 import type { Work } from '../../types/Work';
-import { Container } from "@suid/material"
+
 
 type Props = {
   work: Work,
@@ -12,11 +12,17 @@ type Props = {
 
 const WorkDetail: Component<Props> = (props) => {
   return (
-    <Container>
-      <Typography variant='h5'>
+    <Stack m={2} py={2} direction='column' justifyContent='center' spacing={2}>
+      <Typography variant='h5' component='a' href={props.work.url} target='_blank' color="textPrimary">
         {props.work.title}
       </Typography>
-    </Container>
+      <Typography variant='body1'>
+        {props.work.text}
+      </Typography>
+      <Typography variant='body1'>
+        <b>Role:</b> {props.work.role}
+      </Typography>
+    </Stack>
   );
 };
 
