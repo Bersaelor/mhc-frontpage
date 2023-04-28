@@ -1,9 +1,17 @@
 import type { Component } from 'solid-js';
 import { Container } from "@suid/material"
+import IconButton from '@suid/material/IconButton';
+import ArrowBackRoundedIcon from '@suid/icons-material/ArrowBackRounded';
+import { A } from "@solidjs/router";
 
 const Imprint: Component = () => {
   return (
     <Container>
+      <A href='/'>
+        <IconButton aria-label="back" size="large" color="primary">
+          <ArrowBackRoundedIcon />
+        </IconButton>
+      </A>
 
       <h1>Impressum</h1>
 

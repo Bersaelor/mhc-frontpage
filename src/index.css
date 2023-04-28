@@ -18,6 +18,10 @@ body {
   scrollbar-color: #f8f6e5 transparent;
 }
 
+.header h1 {
+  margin: 0;
+}
+
 body::-webkit-scrollbar {
   width: 8px;               /* width of the entire scrollbar */
 }
