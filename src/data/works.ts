@@ -192,7 +192,7 @@ const works: { [key: string]: Work } = {
     "title": "The Riddler",
     "text": "Interactive Multi-Media AR-Installation for CSAIL MIT. Permanent digital world running on a wall installation, users can interact using their phones in AR.",
     "techs": ["Unity", "Photon", "ARKit", "ARFoundation"],
-    "role": "developer",
+    "role": "sole developer",
     "url": "https://www.csail.mit.edu/news/magical-garden-gates-tower",
     "release": "2022",
     "thumbnail": "logo.png",
