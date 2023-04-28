@@ -1,13 +1,13 @@
 import type { Component } from 'solid-js';
-import { For } from 'solid-js';
 import Stack from '@suid/material/Stack';
 import Typography from '@suid/material/Typography';
-import { styled } from '@suid/material/styles';
 import type { Work } from '../../types/Work';
 import CloseRoundedIcon from '@suid/icons-material/CloseRounded';
 import IconButton from '@suid/material/IconButton';
+import ImageGallery from '../ImageGallery/ImageGallery';
 
 type Props = {
+  key: string,
   work: Work,
   onClose: () => void
 }
@@ -40,6 +40,7 @@ const WorkDetail: Component<Props> = (props) => {
       <Typography variant='body1'>
         <b>Role:</b> {props.work.role}
       </Typography>
+      <ImageGallery images={props.work.imgs.map(i => `imgs/${props.key}/${i}`)} />
     </Stack>
   );
 };

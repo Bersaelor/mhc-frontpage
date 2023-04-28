@@ -7,4 +7,5 @@ export type Work = {
   url: string
   thumbnail: string
   langs: string[]
+  imgs: string[]
 }

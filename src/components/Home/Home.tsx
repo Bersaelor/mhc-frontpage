@@ -21,12 +21,25 @@ import workData from '../../data/works.js';
 
 const StyledModal = styled(Dialog)(({ theme }) => ({
   '.MuiBackdrop-root': {
-    backgroundColor: '#00000044'
+    backgroundColor: '#00000044',
   },
   '.MuiDialog-paper': {
     borderRadius: theme.spacing(2),
     backgroundColor: '#03575aaa',
     backdropFilter: 'blur(8px)',
+    maxWidth: '800px',
+    overflow: 'overlay',
+    scrollbarWidth: 'thin',
+    scrollbarColor: '#f8f6e5 transparent',
+  
+    '&::-webkit-scrollbar': {
+      width: '8px',
+    },
+    '&::-webkit-scrollbar-thumb': {
+      borderRadius: 8,
+      backgroundColor: '#ffffff44',
+      border: '2px solid #03575aff'
+    },
   }
 }))
 
@@ -87,7 +100,7 @@ const Home: Component = () => {
             //   in={work() != undefined}
             //   {...(work() != undefined ? { timeout: 300 } : {})}
             // >
-              <WorkDetail work={work()!} onClose={handleClose} />
+              <WorkDetail key={selected()!} work={work()!} onClose={handleClose} />
             // </Grow>
             )}
         </StyledModal >

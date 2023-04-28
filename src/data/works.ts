@@ -9,7 +9,8 @@ const works: { [key: string]: Work } = {
     "release": "2009",
     "url": "https://www.youtube.com/watch?v=MAYVPjAc_9s",
     "thumbnail": "logo.png",
-    "langs": ["ObjC", "C", "C++"]
+    "langs": ["ObjC", "C", "C++"],
+    "imgs": ["tactica.png", "flyerfront.jpg", "flyerback.jpg"]
   },
   "ibeat": {
     "title": "iBeat the Metronome",
@@ -19,7 +20,8 @@ const works: { [key: string]: Work } = {
     "release": "2010",
     "url": "https://apptopia.com/ios/app/398984403/about",
     "thumbnail": "logo.png",
-    "langs": ["ObjC"]
+    "langs": ["ObjC"],
+    "imgs": ["ibeat"]
   },
   "isogon": {
     "title": "ISOGON Fenster Konfigurator",
@@ -29,7 +31,8 @@ const works: { [key: string]: Work } = {
     "release": "2011",
     "url": "https://apps.apple.com/de/app/fenster/id455902895?l=en",
     "thumbnail": "logo.png",
-    "langs": ["ObjC", "C++"]
+    "langs": ["ObjC", "C++"],
+    "imgs": ["isogon", "isogon2"]
   },
   "iceyetest": {
     "title": "IC the Eyetest",
@@ -39,7 +42,8 @@ const works: { [key: string]: Work } = {
     "release": "2011",
     "url": "https://www.ipad-tipps.de/ipad-apps-oculus-testen-sie-ihre-sehscharfe-direkt-uber-das-ipad/",
     "thumbnail": "logo.png",
-    "langs": ["ObjC"]
+    "langs": ["ObjC"],
+    "imgs": ["ic"]
   },
   "nickjr": {
     "title": "Nick Jr. Watch & Learn",
@@ -49,7 +53,8 @@ const works: { [key: string]: Work } = {
     "release": "2012",
     "url": "https://winners.lovieawards.com/#!y=2014&m=309",
     "thumbnail": "logo.png",
-    "langs": ["ObjC"]
+    "langs": ["ObjC"],
+    "imgs": ["dora", "download.jpeg", "nickjr-1.PNG"]
   },
   "mtvutt": {
     "title": "MTV Under The Thumb",
@@ -59,17 +64,19 @@ const works: { [key: string]: Work } = {
     "release": "2013",
     "url": "https://news.cision.com/de/viacomcbs-networks-gsa/r/mtv-baut-mobiles-tv-erlebnis-aus--lineare-premium-tv-kanale-erweitern-mtv-under-the-thumb-app,c9413537",
     "thumbnail": "logo.png",
-    "langs": ["ObjC"]
+    "langs": ["ObjC"],
+    "imgs": ["utt.jpeg", "thumb.jpg"]
   },
   "formicarium": {
     "title": "Formicarium",
     "text": "Ecosystem simulation and ants strategy game inspired by Dwarf Fortress. Core ecosystem simulation running in C++ with a decoupled UI using SpriteKit",
     "techs": ["Boost", "C++ std", "SpriteKit"],
     "role": "developer, idea",
-    "release": "2015",
+    "release": "2014",
     "url": "https://www.kickstarter.com/projects/1732304023/formicarium-a-strategy-simulation-sandbox-game/?ref=kicktraq",
     "thumbnail": "logo.png",
-    "langs": ["ObjC", "C++"]
+    "langs": ["ObjC", "C++"],
+    "imgs": ["underground management_small", "fighting beetle", "screenshot_iniPad.jpg"]
   },
   "playplex": {
     "title": "Viacom Play Plex",
@@ -79,17 +86,19 @@ const works: { [key: string]: Work } = {
     "release": "2015",
     "url": "https://www.mediaweek.com.au/viacom-launches-viacom-play-plex-suite-of-mobile-tv-apps/",
     "thumbnail": "logo.jpg",
-    "langs": ["Swift"]
+    "langs": ["Swift"],
+    "imgs": ["320x480bb.jpg", "iPhone2.jpg", "playplex.jpg"]
   },
   "nickelodeon": {
     "title": "Nickelodeon International App",
     "text": "International version of the iOS Nickelodeon App.",
     "techs": ["UIKit", "AVFoundation"],
     "role": "lead developer",
-    "release": "2015",
-    "url": "https://apps.apple.com/ch/app/nickelodeon-play/id977678950",
+    "release": "2016",
+    "url": "https://www.nickalive.net/2020/12/nickelodeon-benelux-to-discontinue.html?m=0",
     "thumbnail": "logo.png",
-    "langs": ["ObjC", "Swift"]
+    "langs": ["ObjC", "Swift"],
+    "imgs": ["nickelodeon.jpg", "intl.jpg"]
   },
   "looceyetest": {
     "title": "LooC Mobile Eye Test",
@@ -99,17 +108,19 @@ const works: { [key: string]: Work } = {
     "release": "2017",
     "url": "https://apps.apple.com/us/app/looc-mobile-eye-test/id405950873",
     "thumbnail": "logo.png",
-    "langs": ["Swift", "GLSL"]
+    "langs": ["Swift", "GLSL"],
+    "imgs": ["test1", "test2"]
   },
   "universeAR": {
     "title": "Universe AR",
     "text": "AR visualization of the Solar system and star constellations. Holiday project that ended up becoming the LooC AR Try-On app",
     "techs": ["SceneKit", "ARKit", "Swift"],
     "role": "developer, designer, idea",
-    "release": "2016",
+    "release": "2017",
     "url": "https://www.youtube.com/shorts/y8YNZEFhtME",
     "thumbnail": "logo.png",
-    "langs": ["Swift"]
+    "langs": ["Swift"],
+    "imgs": ["screenshot"]
   },
   "loocar": {
     "title": "LooC AR Try-On",
@@ -119,7 +130,8 @@ const works: { [key: string]: Work } = {
     "release": "2019",
     "url": "https://apps.apple.com/us/app/my-looc-virtual-try-on/id1463380262",
     "thumbnail": "logo.png",
-    "langs": ["Swift"]
+    "langs": ["Swift"],
+    "imgs": ["looc ar app"]
   },
   "looccms": {
     "title": "LooC Content Management System",
@@ -129,7 +141,8 @@ const works: { [key: string]: Work } = {
     "url": "https://cms.looc.io",
     "release": "2020",
     "thumbnail": "CMS_Logo_icon.svg",
-    "langs": ["TS", "JS", "Python"]
+    "langs": ["TS", "JS", "Python"],
+    "imgs": ["looccms2", "looccms", "looccms3"]
   },
   "grafixandroid": {
     "title": "Grafix 4.0 Android",
@@ -139,7 +152,8 @@ const works: { [key: string]: Work } = {
     "url": "https://play.google.com/store/apps/details?id=de.mom.grafix",
     "release": "2021",
     "thumbnail": "logo.png",
-    "langs": ["C#"]
+    "langs": ["C#"],
+    "imgs": ["unnamed.jpg", "unnamed-2.jpg"]
   },
   "loocwebgl": {
     "title": "LooC WebGL Try-On",
@@ -149,7 +163,8 @@ const works: { [key: string]: Work } = {
     "url": "https://test.looc.io/tryon/index.html",
     "release": "2021",
     "thumbnail": "logo.png",
-    "langs": ["C#"]
+    "langs": ["C#"],
+    "imgs": ["screenshot.jpg"]
   },
   "reframd": {
     "title": "Reframd iOS App",
@@ -159,7 +174,8 @@ const works: { [key: string]: Work } = {
     "url": "https://www.reframd.com",
     "release": "2021",
     "thumbnail": "Icon.jpg",
-    "langs": ["Swift"]
+    "langs": ["Swift"],
+    "imgs": ["1242x2688bb.png"]
   },
   "eo": {
     "title": "Edel-Optics iOS App",
@@ -169,17 +185,19 @@ const works: { [key: string]: Work } = {
     "url": "https://apps.apple.com/app/edel-optics/id1594244005",
     "release": "2022",
     "thumbnail": "logo.png",
-    "langs": ["Swift"]
+    "langs": ["Swift"],
+    "imgs": ["edel-optics-measure.png"]
   },
   "riddler": {
     "title": "The Riddler",
     "text": "Interactive Multi-Media AR-Installation for CSAIL MIT. Permanent digital world running on a wall installation, users can interact using their phones in AR.",
     "techs": ["Unity", "Photon", "ARKit", "ARFoundation"],
-    "role": "sole developer",
+    "role": "developer",
     "url": "https://www.csail.mit.edu/news/magical-garden-gates-tower",
     "release": "2022",
     "thumbnail": "logo.png",
-    "langs": ["C#", "GLSL"]
+    "langs": ["C#", "GLSL"],
+    "imgs": ["largepic.jpg", "ar.jpg", "riddler.jpg"]
   },
   "recast": {
     "title": "Recast Chrome Extension & Player SSR page",
@@ -189,17 +207,19 @@ const works: { [key: string]: Work } = {
     "url": "https://www.letsrecast.ai",
     "release": "2023",
     "thumbnail": "logo.png",
-    "langs": ["TS", "JS"]
+    "langs": ["TS", "JS"],
+    "imgs": ["recast chrome extension.png", "recast SSR"]
   },
   "urhere": {
     "title": "URHERE Art Performance Streaming Site",
     "text": "Media streaming website for art performances and audio walks in New York. With user management, stripe integration for payment and dynamic content loading",
     "techs": ["Solid.js frontend", "AWS Lambda", "CF", "S3", "DynamoDB", "Stripe payment integration"],
-    "role": "architect, sole backend, lead frontend",
+    "role": "architect, lead backend, lead frontend",
     "url": "https://urhere.art/",
     "release": "2023",
     "thumbnail": "logo.png",
-    "langs": ["TS", "JS"]
+    "langs": ["TS", "JS"],
+    "imgs": ["urhere big", "urhere small"]
   }
 }
 

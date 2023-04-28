@@ -11,6 +11,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow: overlay;
+  
+  scrollbar-width: thin;
+  scrollbar-color: #f8f6e5 transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+/* body::-webkit-scrollbar-track {
+  background: orange; 
+} */
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f8f6e599;    /* color of the scroll thumb */
+  border-radius: 3px;       /* roundness of the scroll thumb */
+  border: 2px solid black;  /* creates padding around scroll thumb */
 }
 
 code {
