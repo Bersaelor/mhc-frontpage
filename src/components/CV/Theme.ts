@@ -7,24 +7,24 @@ const theme = createTheme({
       fontWeight: 500,
     },
     h5: {
-      fontSize: '1.5rem',
+      fontSize: '1.75rem',
       fontWeight: 600,
     },
     h6: {
-      fontSize: '1.05rem',
+      fontSize: '1.25rem',
       fontWeight: 300,
     },
   },
   palette: {
     primary: {
-      main: '#c1dff5'
+      main: '#078294'
     },
     secondary: {
       main: "#851948",
     },
     text: {
       primary: '#000000',
-      secondary: '#8e8e8e'
+      secondary: '#ffffff'
     },
     background: {
       default: '#ffffff',

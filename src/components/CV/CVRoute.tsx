@@ -7,11 +7,11 @@ import theme from './Theme';
 
 const CVRoute: Component = () => {
   return (
-    <LocaleWrapper>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <LocaleWrapper>
         <CV />
-      </ThemeProvider>
-    </LocaleWrapper>
+      </LocaleWrapper>
+    </ThemeProvider>
   );
 };
 
