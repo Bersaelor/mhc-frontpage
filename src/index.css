@@ -35,8 +35,3 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;       /* roundness of the scroll thumb */
   border: 2px solid black;  /* creates padding around scroll thumb */
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

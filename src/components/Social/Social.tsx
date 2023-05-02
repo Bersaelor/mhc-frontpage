@@ -5,6 +5,7 @@ import Grid from '@suid/material/Grid';
 import GradientTitle from '../GradientTitle/GradientTitle';
 import MailOutlineRoundedIcon from '@suid/icons-material/MailOutlineRounded';
 import Stack from '@suid/material/Stack';
+import ArticleRoundedIcon from '@suid/icons-material/ArticleRounded';
 
 import github from './github.svg'
 import linkedin from './linkedin.svg'
@@ -20,12 +21,20 @@ const Social: Component = () => {
 
       <Grid justifyContent="center" container spacing={3} mt={0}>
         <Grid sx={{ textAlign: 'center' }} item xs={12}>
-          <Typography component='a' color="#e8eaf8" href="mailto:konrad@mathheartcode.com">
-            <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-              <MailOutlineRoundedIcon />
-              <span>konrad@mathheartcode.com</span>
-            </Stack>
-          </Typography>
+          <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
+            <Typography component='a' color="#e8eaf8" href="mailto:konrad@mathheartcode.com">
+              <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
+                <MailOutlineRoundedIcon />
+                <span>konrad@mathheartcode.com</span>
+              </Stack>
+            </Typography>
+            <Typography component='a' color="#e8eaf8" href="./cv">
+              <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
+                <ArticleRoundedIcon />
+                <span>CV</span>
+              </Stack>
+            </Typography>
+          </Stack>
         </Grid>
         <Grid item xs={4} md={2}>
           <Typography component='a' color="#e8eaf8" href="https://github.com/Bersaelor">

@@ -6,6 +6,18 @@ export const desktopQuery = `@media only screen and (min-width: 600px) and (min-
 
 const theme = createTheme({
   typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
     h4: {
       fontSize: '1.75rem',
       fontWeight: 500,
