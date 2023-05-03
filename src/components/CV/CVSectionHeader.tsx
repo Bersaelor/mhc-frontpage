@@ -17,8 +17,8 @@ const RoundedIconBack = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   borderRadius: '80px',
-  height: '52px',
-  width: '52px',
+  height: '40px',
+  width: '40px',
   backgroundColor: theme.palette.primary.main,
 }))
 

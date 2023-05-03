@@ -18,20 +18,20 @@ export const MonoSpacedDate = styled(Typography)(({ theme }) => ({
     'Arial',
     'sans-serif',
   ].join(','),
-  fontSize: '1.0rem',
-  lineHeight: '2rem',
+  fontSize: '0.8rem',
+  lineHeight: '1.6rem',
   fontWeight: '550'
 }));
 
 export const JobTitle = styled(Typography)(({ theme }) => ({
-  fontSize: '1.25rem',
+  fontSize: '1rem',
   fontWeight: '500',
   color: theme.palette.text.primary,
 }));
 
 export const CompanyLink = styled('a')(({ theme }) => ({
-  fontSize: '1.1rem',
-  letterSpacing: '0.2rem',
+  fontSize: '0.9rem',
+  letterSpacing: '0.15rem',
   fontWeight: '200',
   color: theme.palette.text.primary,
   textDecoration: 'none',

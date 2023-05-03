@@ -5,6 +5,7 @@ const i18n = i18next
   .use(HttpApi)
   .use(LanguageDetector)
   .init({
+    load: 'languageOnly',
     fallbackLng: 'en',
     preload: ['en', 'de'],
     ns: 'translations',

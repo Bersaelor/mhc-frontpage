@@ -41,7 +41,7 @@ const steps: CareerStep[] = [
       "de": "Leitender iOS Entwickler in einem Team aus 5 Entwicklern, außerdem produktübergreifender Code-Architekt für die internationalen iOS Apps."
     },
     "start_date": "2016-01-01",
-    "end_date": "2017-11.01"
+    "end_date": "2017-11-01"
   },
   {
     "title": {

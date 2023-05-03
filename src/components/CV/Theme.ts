@@ -15,16 +15,22 @@ const theme = createTheme({
       '"Segoe UI Symbol"',
     ].join(','),
     h4: {
-      fontSize: '1.75rem',
+      fontSize: '1.45rem',
       fontWeight: 500,
     },
     h5: {
-      fontSize: '1.75rem',
+      fontSize: '1.25rem',
       fontWeight: 600,
     },
     h6: {
-      fontSize: '1.25rem',
+      fontSize: '1.05rem',
       fontWeight: 300,
+    },
+    body1: {
+      fontSize: '0.9rem',
+    },
+    body2: {
+      fontSize: '0.75rem',
     },
   },
   palette: {

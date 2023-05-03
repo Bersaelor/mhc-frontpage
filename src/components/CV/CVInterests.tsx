@@ -13,7 +13,7 @@ export const CellTitle = styled(Typography)(({ theme }) => ({
     'Arial',
     'sans-serif',
   ].join(','),
-  fontSize: '1.05rem',
+  fontSize: '.85rem',
   fontWeight: '500',
   color: theme.palette.text.secondary,
 }));
@@ -21,7 +21,7 @@ export const CellTitle = styled(Typography)(({ theme }) => ({
 const ItemCell: Component<{ text: string }> = (props) => {
   return (
     <Paper elevation={0} sx={{ backgroundColor: 'primary.main' }}>
-      <CellTitle px={1.5} py={0.5}>{props.text}</CellTitle>
+      <CellTitle px={1} py={0.5}>{props.text}</CellTitle>
     </Paper>
   );
 }

@@ -15,7 +15,7 @@ type Props = {
 }
 
 export const SubTitle = styled(Typography)(({ theme }) => ({
-  fontSize: '1.05rem',
+  fontSize: '0.85rem',
   fontWeight: '500',
   color: theme.palette.text.primary,
 }));
@@ -27,7 +27,7 @@ export const CellTitle = styled(Typography)(({ theme }) => ({
     'Arial',
     'sans-serif',
   ].join(','),
-  fontSize: '1.05rem',
+  fontSize: '.75rem',
   fontWeight: '500',
   color: theme.palette.text.secondary,
 }));
@@ -35,7 +35,7 @@ export const CellTitle = styled(Typography)(({ theme }) => ({
 const ItemCell: Component<{ text: string, color?: string }> = (props) => {
   return (
     <Paper elevation={0} sx={{ backgroundColor: props.color || 'secondary.main' }}>
-      <CellTitle px={1}>{props.text}</CellTitle>
+      <CellTitle px={0.5}>{props.text}</CellTitle>
     </Paper>
   );
 }

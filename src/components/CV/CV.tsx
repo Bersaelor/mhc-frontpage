@@ -31,7 +31,7 @@ const Background = styled('div')(({ theme }) => ({
 }))
 
 const Container = styled('div')(({ theme }) => ({
-  maxWidth: '920px',
+  maxWidth: '840px',
   marginLeft: 'auto',
   marginRight: 'auto',
   paddingTop: theme.spacing(3),
@@ -62,39 +62,39 @@ const CV: Component = () => {
 
             <CVHeader />
             <Section>
-              <CVSectionHeader key='cv.section.profile' icon={<PersonRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.profile' icon={<PersonRoundedIcon fontSize="medium" />} />
               <Typography variant="body1" color="text.primary">
                 {i18n.t('cv.profile.text')}
               </Typography>
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.career' icon={<ApartmentRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.career' icon={<ApartmentRoundedIcon fontSize="medium" />} />
               <CVCareer />
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.projects' icon={<PhoneIphoneRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.projects' icon={<PhoneIphoneRoundedIcon fontSize="medium" />} />
               <CVWorks />
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.education' icon={<SchoolRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.education' icon={<SchoolRoundedIcon fontSize="medium" />} />
               <CVEducation />
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.talks' icon={<ChatBubbleRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.talks' icon={<ChatBubbleRoundedIcon fontSize="medium" />} />
               <CVTalks />
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.languages' icon={<TranslateRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.languages' icon={<TranslateRoundedIcon fontSize="medium" />} />
               <CVLanguages />
             </Section>
 
             <Section>
-              <CVSectionHeader key='cv.section.interests' icon={<InterestsRoundedIcon fontSize="large" />} />
+              <CVSectionHeader key='cv.section.interests' icon={<InterestsRoundedIcon fontSize="medium" />} />
               <CVInterests />
             </Section>
           </Box>

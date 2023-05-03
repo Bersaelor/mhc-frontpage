@@ -32,6 +32,7 @@ const Portrait = styled('img')(({ theme }) => ({
 const StyledLink = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.secondary,
   textDecoration: 'none',
+  fontSize: '0.8rem',
 }))
 
 const CVHeader: Component = () => {
@@ -40,7 +41,7 @@ const CVHeader: Component = () => {
   return (
     <Box py={2}>
       <GradientPaper>
-        <Stack p={2} spacing={2} direction='row' alignItems='center' justifyContent='space-between'>
+        <Stack p={0.5} spacing={2} direction='row' alignItems='center' justifyContent='space-between'>
           <Stack spacing={2} direction='row' alignItems='center'>
             <Portrait src={photo} alt="photo of Konrad" />
             <Stack direction='column' alignItems='center' justifyContent='center'>
@@ -56,43 +57,43 @@ const CVHeader: Component = () => {
           <Stack pr={2} direction='column' alignItems='flex-start' justifyContent='center'>
             <StyledLink component='a' href="mailto:konrad@mathheartcode.com">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <MailOutlineRoundedIcon />
+                <MailOutlineRoundedIcon fontSize='small' />
                 <span>konrad@mathheartcode.com</span>
               </Stack>
             </StyledLink>
             <StyledLink component='a' href="tel:+49 17672624019">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <LocalPhoneRoundedIcon />
+                <LocalPhoneRoundedIcon fontSize='small' />
                 <span>+49 176 72624019</span>
               </Stack>
             </StyledLink>
-            <Typography color="white">
+            <Typography color="white" fontSize='0.8rem'>
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <PlaceRoundedIcon />
+                <PlaceRoundedIcon fontSize='small' />
                 <span>Berlin</span>
               </Stack>
             </Typography>
             <StyledLink component='a' href="https://www.mathheartcode.com">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <LanguageRoundedIcon />
+                <LanguageRoundedIcon fontSize='small' />
                 <span>www.mathheartcode.com</span>
               </Stack>
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://github.com/Bersaelor">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="20px" src={github} alt="Github icon" />
+                <img height="16px" src={github} alt="Github icon" />
                 <span>github.com/Bersaelor</span>
               </Stack>
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://www.linkedin.com/in/konrad-feiler/">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="20px" src={linkedin} alt="LinkedIn icon" />
+                <img height="16px" src={linkedin} alt="LinkedIn icon" />
                 <span>linkedin.com/in/konrad-feiler</span>
               </Stack>
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://twitter.com/bersaelor">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="20px" src={twitter} alt="Twitter icon" />
+                <img height="16px" src={twitter} alt="Twitter icon" />
                 <span>twitter.com/bersaelor</span>
               </Stack>
             </StyledLink>
