@@ -38,7 +38,7 @@ const CVHeader: Component = () => {
   const i18n = useI18n();
 
   return (
-    <Box py={2} mx={2}>
+    <Box py={2}>
       <GradientPaper>
         <Stack p={2} spacing={2} direction='row' alignItems='center' justifyContent='space-between'>
           <Stack spacing={2} direction='row' alignItems='center'>
