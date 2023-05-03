@@ -2,6 +2,18 @@ import { createTheme } from "@suid/material/styles";
 
 const theme = createTheme({
   typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
     h4: {
       fontSize: '1.75rem',
       fontWeight: 500,

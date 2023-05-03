@@ -1,11 +1,11 @@
 import type { Component } from 'solid-js';
 import { styled } from '@suid/material/styles';
 import { Typography } from '@suid/material';
-import Stack from '@suid/material/Stack';
 import Paper from '@suid/material/Paper';
 import Box from '@suid/material/Box';
 import CVHeader from './CVHeader';
 import CVSectionHeader from './CVSectionHeader';
+import CVCareer from './CVCareer';
 import ApartmentRoundedIcon from '@suid/icons-material/ApartmentRounded';
 import PersonRoundedIcon from '@suid/icons-material/PersonRounded';
 import PhoneIphoneRoundedIcon from '@suid/icons-material/PhoneIphoneRounded';
@@ -65,9 +65,7 @@ const CV: Component = () => {
 
             <Section>
               <CVSectionHeader key='cv.section.career' icon={<ApartmentRoundedIcon fontSize="large" />} />
-              <Typography variant="body1" color="text.primary">
-                {i18n.t('cv.profile.text')}
-              </Typography>
+              <CVCareer />
             </Section>
 
             <Section>
