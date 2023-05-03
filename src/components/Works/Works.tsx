@@ -28,7 +28,6 @@ const LastCell = styled('div')(({ theme }) => ({
   aspectRatio: '1/1',
 }))
 
-
 type Props = {
   works: { [key: string]: Work },
   onWorkSelected: (key: string) => void

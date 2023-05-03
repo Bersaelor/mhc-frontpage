@@ -1,15 +1,7 @@
 @font-face {
 	font-family: "Source Code Pro";
-	src: url(./assets/fonts/SourceCodePro-Medium.ttf); 
-  font-weight: medium;
+	src: url(./assets/fonts/SourceCodePro-VariableFont_wght.ttf); 
   font-style: normal;
-}
-
-@font-face {
-	font-family: "Source Code Pro";
-	src: url(./assets/fonts/SourceCodePro-Regular.ttf); 
-  font-weight: normal;
-  font-style: italic;
 }
 
 html {

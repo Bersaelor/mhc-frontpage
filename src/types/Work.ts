@@ -1,6 +1,6 @@
 export type Work = {
   title: string
-  text: string
+  text: {[key: string]: string}
   techs: string[]
   role: string
   release: string

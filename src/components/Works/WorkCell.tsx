@@ -2,7 +2,6 @@ import type { Component } from 'solid-js';
 import { For } from 'solid-js';
 import { styled } from '@suid/material/styles';
 import type { Work } from '../../types/Work';
-import { useMediaQuery, useTheme } from "@suid/material";
 
 const Cell = styled('div')(({ theme }) => ({
   display: 'flex',

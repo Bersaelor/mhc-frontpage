@@ -32,7 +32,7 @@ const theme = createTheme({
       main: '#078294'
     },
     secondary: {
-      main: "#851948",
+      main: "#506fc0",
     },
     text: {
       primary: '#000000',

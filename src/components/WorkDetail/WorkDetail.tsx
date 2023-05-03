@@ -29,7 +29,7 @@ const WorkDetail: Component<Props> = (props) => {
         </IconButton>
       </Stack>
       <Typography variant='body1'>
-        {props.work.text}
+        {props.work.text["en"]}
       </Typography>
       <Typography variant='body1'>
         <b>Technologies:</b> {props.work.techs.join(', ')}

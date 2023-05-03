@@ -20,7 +20,7 @@ export const MonoSpacedDate = styled(Typography)(({ theme }) => ({
   ].join(','),
   fontSize: '1.0rem',
   lineHeight: '2rem',
-  fontWeight: '400'
+  fontWeight: '550'
 }));
 
 export const JobTitle = styled(Typography)(({ theme }) => ({
