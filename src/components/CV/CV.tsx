@@ -8,6 +8,9 @@ import CVSectionHeader from './CVSectionHeader';
 import CVCareer from './CVCareer';
 import CVWorks from './CVWorks';
 import CVEducation from './CVEducation';
+import CVLanguages from './CVLanguages';
+import CVInterests from './CVInterests';
+import CVTalks from './CVTalks';
 import ApartmentRoundedIcon from '@suid/icons-material/ApartmentRounded';
 import PersonRoundedIcon from '@suid/icons-material/PersonRounded';
 import PhoneIphoneRoundedIcon from '@suid/icons-material/PhoneIphoneRounded';
@@ -82,23 +85,17 @@ const CV: Component = () => {
 
             <Section>
               <CVSectionHeader key='cv.section.talks' icon={<ChatBubbleRoundedIcon fontSize="large" />} />
-              <Typography variant="body1" color="text.primary">
-                {i18n.t('cv.profile.text')}
-              </Typography>
+              <CVTalks />
             </Section>
 
             <Section>
               <CVSectionHeader key='cv.section.languages' icon={<TranslateRoundedIcon fontSize="large" />} />
-              <Typography variant="body1" color="text.primary">
-                {i18n.t('cv.profile.text')}
-              </Typography>
+              <CVLanguages />
             </Section>
 
             <Section>
               <CVSectionHeader key='cv.section.interests' icon={<InterestsRoundedIcon fontSize="large" />} />
-              <Typography variant="body1" color="text.primary">
-                {i18n.t('cv.profile.text')}
-              </Typography>
+              <CVInterests />
             </Section>
           </Box>
         </Paper>

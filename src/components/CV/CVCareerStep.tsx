@@ -29,7 +29,7 @@ export const JobTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
-const CompanyLink = styled('a')(({ theme }) => ({
+export const CompanyLink = styled('a')(({ theme }) => ({
   fontSize: '1.1rem',
   letterSpacing: '0.2rem',
   fontWeight: '200',
