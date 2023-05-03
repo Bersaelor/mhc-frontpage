@@ -52,7 +52,7 @@ const CVWork: Component<Props> = (props) => {
       </Grid>
       <Grid item xs={12} sm={9}>
         <Stack mb={2} direction='column'>
-          <JobTitle>
+          <JobTitle component='a' href={props.work.url} target='_blank' rel='noreferrer'>
             {props.work.title}
           </JobTitle>
           <Typography variant="body2" color="text.primary">

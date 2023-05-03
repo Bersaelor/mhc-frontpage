@@ -26,6 +26,7 @@ export const MonoSpacedDate = styled(Typography)(({ theme }) => ({
 export const JobTitle = styled(Typography)(({ theme }) => ({
   fontSize: '1rem',
   fontWeight: '500',
+  textDecoration: 'none',
   color: theme.palette.text.primary,
 }));
 
