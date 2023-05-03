@@ -6,6 +6,7 @@ import Box from '@suid/material/Box';
 import CVHeader from './CVHeader';
 import CVSectionHeader from './CVSectionHeader';
 import CVCareer from './CVCareer';
+import CVEducation from './CVEducation';
 import ApartmentRoundedIcon from '@suid/icons-material/ApartmentRounded';
 import PersonRoundedIcon from '@suid/icons-material/PersonRounded';
 import PhoneIphoneRoundedIcon from '@suid/icons-material/PhoneIphoneRounded';
@@ -77,9 +78,7 @@ const CV: Component = () => {
 
             <Section>
               <CVSectionHeader key='cv.section.education' icon={<SchoolRoundedIcon fontSize="large" />} />
-              <Typography variant="body1" color="text.primary">
-                {i18n.t('cv.profile.text')}
-              </Typography>
+              <CVEducation />
             </Section>
 
             <Section>

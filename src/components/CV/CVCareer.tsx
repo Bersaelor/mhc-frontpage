@@ -3,7 +3,7 @@ import { For } from 'solid-js';
 import CVCareerStep from './CVCareerStep';
 import steps from '../../data/careersteps';
 
-const CVSectionHeader: Component = () => {
+const CVCareer: Component = () => {
 
   return (
     <For each={steps.reverse()}>
@@ -14,4 +14,4 @@ const CVSectionHeader: Component = () => {
   );
 };
 
-export default CVSectionHeader;
+export default CVCareer;

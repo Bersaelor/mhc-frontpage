@@ -23,7 +23,7 @@ export const MonoSpacedDate = styled(Typography)(({ theme }) => ({
   fontWeight: '400'
 }));
 
-const JobTitle = styled(Typography)(({ theme }) => ({
+export const JobTitle = styled(Typography)(({ theme }) => ({
   fontSize: '1.25rem',
   fontWeight: '500',
   color: theme.palette.text.primary,
