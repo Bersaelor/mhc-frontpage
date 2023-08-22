@@ -1,4 +1,4 @@
-import type { Work } from "../types/Work"
+import type { Work } from "../types/Work";
 
 const works: { [key: string]: Work } = {
   "tactica": {
@@ -262,7 +262,7 @@ const works: { [key: string]: Work } = {
     },
     "techs": ["Solid.js", "React.js", "AWS Lambda, CF, S3, DynamoDB"],
     "role": "developer",
-    "url": "https://www.letsrecast.ai",
+    "url": "https://letsrecast.ai/?ref=bersaelor",
     "release": "2023",
     "thumbnail": "logo.png",
     "langs": ["TS", "JS"],
