@@ -1,9 +1,9 @@
-import type { Component } from 'solid-js';
-import { styled } from '@suid/material/styles';
-import { For } from 'solid-js';
+import { Typography } from '@suid/material';
 import Grid from '@suid/material/Grid';
 import Stack from '@suid/material/Stack';
-import { Typography } from '@suid/material';
+import { styled } from '@suid/material/styles';
+import type { Component } from 'solid-js';
+import { For } from 'solid-js';
 import { useI18n } from "../../i18n/context";
 
 export const Language = styled(Typography)(({ theme }) => ({
@@ -18,7 +18,7 @@ export const Title = styled(Typography)(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
-const steps = [
+const languages = [
   {
     name: {
       "de": "Deutsch",
@@ -49,24 +49,34 @@ const steps = [
       "en": "B1",
     }
   },
+  {
+    name: {
+      "de": "(Neu)Griechisch",
+      "en": "Modern Greek",
+    },
+    value: {
+      "de": "A1",
+      "en": "A1",
+    }
+  },
 ];
 
 const CVLanguages: Component = () => {
   const i18n = useI18n();
 
   return (
-    <For each={steps.reverse()}>
-      {(step) =>
+    <For each={languages}>
+      {(language) =>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={3}>
             <Language>
-              {step.name[i18n.language as 'de' | 'en']}
+              {language.name[i18n.language as 'de' | 'en']}
             </Language>
           </Grid>
           <Grid item xs={12} sm={9}>
             <Stack mb={2} direction='column'>
               <Title>
-                {step.value[i18n.language as 'de' | 'en']}
+                {language.value[i18n.language as 'de' | 'en']}
               </Title>
             </Stack>
           </Grid>

@@ -274,12 +274,26 @@ const works: { [key: string]: Work } = {
       "en": "Media streaming website for art performances and audio walks in New York. With user management, stripe integration for payment and dynamic content loading.",
       "de": "Medien-Streaming-Website für Kunstperformances und Audio-Spaziergänge in New York. Mit Benutzerverwaltung, Stripe-Integration für Zahlungen und dynamischen Inhalten."
     },
-    "techs": ["Solid.js frontend", "AWS Lambda", "CF", "S3", "DynamoDB", "Stripe"],
+    "techs": ["Solid.js frontend", "AWS Lambda, CF, S3, DynamoDB", "Stripe"],
     "role": "architect, lead backend, lead frontend",
     "url": "https://urhere.art/",
     "release": "2023",
     "thumbnail": "logo.png",
     "langs": ["TS", "JS"],
+    "imgs": ["urhere big", "urhere small"]
+  },
+  "recompute": {
+    "title": "Recompute.io ",
+    "text": {
+      "en": "SaaS for XCH farmers, the sustainable blockchain.",
+      "de": "SaaS plattform für die nachhaltige Chia blockchain."
+    },
+    "techs": ["Solid.js frontend", "AWS Lambda", "Blockchain", "Crypto", "Stripe", "Coinbase"],
+    "role": "architect, lead backend, lead frontend",
+    "url": "https://recompute.io/",
+    "release": "2024",
+    "thumbnail": "logo.png",
+    "langs": ["TS", "JS", "Swift", "Python"],
     "imgs": ["urhere big", "urhere small"]
   }
 }
