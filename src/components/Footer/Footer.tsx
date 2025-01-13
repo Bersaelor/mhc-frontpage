@@ -1,7 +1,6 @@
-import type { Component } from 'solid-js';
-import { styled } from '@suid/material/styles';
-import { Typography } from '@suid/material';
 import Stack from '@suid/material/Stack';
+import { styled } from '@suid/material/styles';
+import type { Component } from 'solid-js';
 import GradientTitle from '../GradientTitle/GradientTitle';
 
 const StickyFooter = styled('footer')(({ theme }) => ({
@@ -28,7 +27,7 @@ const Footer: Component = () => {
           Privacy Declaration
         </GradientTitle>
         <GradientTitle variant='subtitle2'>
-          © 2023 mathHeartCode UG(haftungsbeschränkt)
+          © 2025 mathHeartCode UG(haftungsbeschränkt)
         </GradientTitle>
       </Stack>
     </StickyFooter>
