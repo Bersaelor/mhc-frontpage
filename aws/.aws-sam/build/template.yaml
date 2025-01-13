@@ -1,0 +1,79 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: mhc-frontpage
+Transform:
+- AWS::Serverless-2016-10-31
+Resources:
+  MHCFrontPageCFDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        DefaultCacheBehavior:
+          TargetOriginId:
+            Fn::Sub: s3-origin-${MHCFrontpageBucket}
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          Compress: true
+          AllowedMethods:
+          - GET
+          - HEAD
+          - OPTIONS
+          ViewerProtocolPolicy: redirect-to-https
+        Enabled: true
+        DefaultRootObject: index.html
+        HttpVersion: http2
+        CustomErrorResponses:
+        - ErrorCachingMinTTL: 86400
+          ErrorCode: 403
+          ResponseCode: 200
+          ResponsePagePath: /index.html
+        - ErrorCachingMinTTL: 86400
+          ErrorCode: 404
+          ResponseCode: 200
+          ResponsePagePath: /index.html
+        Origins:
+        - DomainName:
+            Fn::GetAtt:
+            - MHCFrontpageBucket
+            - DomainName
+          Id:
+            Fn::Sub: s3-origin-${MHCFrontpageBucket}
+          OriginPath: ''
+          OriginShield:
+            Enabled: true
+            OriginShieldRegion: us-east-1
+          S3OriginConfig:
+            OriginAccessIdentity:
+              Fn::Sub: origin-access-identity/cloudfront/${CFOriginAccessIdentity}
+  MHCFrontpageBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Fn::Sub: mhc-frontpage-${AWS::AccountId}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+  CFOriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: Access S3 bucket content only through CloudFront
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Metadata:
+      Comment: Bucket policy to allow cloudfront to access the bucket
+    Properties:
+      Bucket:
+        Ref: MHCFrontpageBucket
+      PolicyDocument:
+        Statement:
+        - Action:
+          - s3:GetObject
+          Effect: Allow
+          Principal:
+            CanonicalUser:
+              Fn::GetAtt:
+              - CFOriginAccessIdentity
+              - S3CanonicalUserId
+          Resource:
+          - Fn::Sub: arn:aws:s3:::${MHCFrontpageBucket}/*
