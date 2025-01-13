@@ -6,7 +6,8 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "aws s3 sync dist/ s3://mhc-frontpage-277707102509 --delete --region eu-central-1 --profile mhc"
   },
   "license": "MIT",
   "devDependencies": {
