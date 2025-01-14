@@ -7,16 +7,12 @@ Resources:
     Type: AWS::CloudFront::Distribution
     Properties:
       DistributionConfig:
-        DefaultCacheBehavior:
-          TargetOriginId:
-            Fn::Sub: s3-origin-${MHCFrontpageBucket}
-          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
-          Compress: true
-          AllowedMethods:
-          - GET
-          - HEAD
-          - OPTIONS
-          ViewerProtocolPolicy: redirect-to-https
+        Aliases:
+        - mathheartcode.com
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:277707102509:certificate/03103d6c-51d9-4679-8d96-16174b91b586
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
         Enabled: true
         DefaultRootObject: index.html
         HttpVersion: http2
@@ -29,6 +25,16 @@ Resources:
           ErrorCode: 404
           ResponseCode: 200
           ResponsePagePath: /index.html
+        DefaultCacheBehavior:
+          TargetOriginId:
+            Fn::Sub: s3-origin-${MHCFrontpageBucket}
+          CachePolicyId: 658327ea-f89d-4fab-a63d-7e88639e58f6
+          Compress: true
+          AllowedMethods:
+          - GET
+          - HEAD
+          - OPTIONS
+          ViewerProtocolPolicy: redirect-to-https
         Origins:
         - DomainName:
             Fn::GetAtt:
