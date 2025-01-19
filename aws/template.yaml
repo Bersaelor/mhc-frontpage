@@ -11,8 +11,9 @@ Resources:
       DistributionConfig:
         Aliases: 
         - mathheartcode.com
+        - www.mathheartcode.com
         ViewerCertificate:
-          AcmCertificateArn: arn:aws:acm:us-east-1:277707102509:certificate/03103d6c-51d9-4679-8d96-16174b91b586
+          AcmCertificateArn: arn:aws:acm:us-east-1:277707102509:certificate/b403a679-ba03-4600-ab18-b1b15feb39a9
           SslSupportMethod: sni-only
           MinimumProtocolVersion: TLSv1.2_2021
         Enabled: true
