@@ -1,5 +1,4 @@
 import type { Component } from 'solid-js';
-import { createSignal, createEffect } from 'solid-js';
 import { useSearchParams } from '@solidjs/router';
 import { styled } from '@suid/material/styles';
 import { Container } from "@suid/material"
@@ -31,7 +30,7 @@ const StyledModal = styled(Dialog)(({ theme }) => ({
     overflow: 'overlay',
     scrollbarWidth: 'thin',
     scrollbarColor: '#f8f6e5 transparent',
-  
+
     '&::-webkit-scrollbar': {
       width: '8px',
     },
@@ -45,66 +44,56 @@ const StyledModal = styled(Dialog)(({ theme }) => ({
 
 const Home: Component = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [selected, setSelected] = createSignal<string | undefined>(searchParams['selected']);
-  const handleClose = () => setSelected(undefined);
 
-  console.log("selected: ", selected)
-
+  // Derived straight from the URL so that the browser Back button closes the
+  // dialog, and so a shared ?selected= link opens it.
+  const selected = () => {
+    const key = searchParams['selected'];
+    return key && workData[key] ? key : undefined;
+  };
   const work = () => {
-    let key = selected();
-    if (key) {
-      return workData[key];
-    }
-    return undefined;
-  }
+    const key = selected();
+    return key ? workData[key] : undefined;
+  };
 
-  createEffect(() => {
-    if (selected()) {
-      setSearchParams({ selected: selected() });
-    } else {
-      setSearchParams({ selected: undefined });
-    }
-  });
+  // Opening pushes an entry (Back closes it again); closing replaces, so the
+  // open/closed pair does not pile up in history.
+  const handleOpen = (key: string) => setSearchParams({ selected: key });
+  const handleClose = () => setSearchParams({ selected: undefined }, { replace: true });
 
   return (
     <>
       <Topheader />
-      
-      <PersonHeader />
 
-      <Container maxWidth="lg" >
-        <Stack direction='column' mt={4} spacing={6} alignItems='stretch'>
-          <Works works={workData} onWorkSelected={(work) => {
-            console.log('work selected: ', work)
-            // set work as selected in the query
-            setSelected(work)
-          }} />
+      <Box component='main' sx={{ flex: 1 }}>
+        <PersonHeader />
 
-          <Technologies />
+        <Container maxWidth="lg" >
+          <Stack direction='column' mt={4} spacing={6} alignItems='stretch'>
+            <Works works={workData} onWorkSelected={handleOpen} />
 
-          <Talks />
+            <Technologies />
 
-          <Social />
+            <Talks />
 
-          <Box p={3} />
-        </Stack>
-        <StyledModal
-          open={work() != undefined}
-          onClose={handleClose}
-          TransitionComponent={Grow}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          {work() && (
-            // <Grow 
-            //   in={work() != undefined}
-            //   {...(work() != undefined ? { timeout: 300 } : {})}
-            // >
+            <Social />
+
+            <Box p={3} />
+          </Stack>
+          <StyledModal
+            open={work() != undefined}
+            onClose={handleClose}
+            TransitionComponent={Grow}
+            aria-labelledby="work-detail-title"
+            aria-describedby="work-detail-description"
+          >
+            {work() && (
               <WorkDetail key={selected()!} work={work()!} onClose={handleClose} />
-            // </Grow>
             )}
-        </StyledModal >
-      </Container >
+          </StyledModal >
+        </Container >
+      </Box>
+
       <Footer />
     </>
   );

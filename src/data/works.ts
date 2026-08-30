@@ -11,7 +11,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, designer, idea",
     "release": "2009",
     "url": "https://www.youtube.com/watch?v=MAYVPjAc_9s",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC", "C", "C++"],
     "imgs": ["tactica.png", "flyerfront.jpg", "flyerback.jpg"]
   },
@@ -26,7 +26,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, designer, idea",
     "release": "2010",
     "url": "https://apptopia.com/ios/app/398984403/about",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC"],
     "imgs": ["ibeat"]
   },
@@ -40,7 +40,7 @@ const works: { [key: string]: Work } = {
     "role": "developer",
     "release": "2011",
     "url": "https://apps.apple.com/de/app/fenster/id455902895?l=en",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC", "C++"],
     "imgs": ["isogon", "isogon2"]
   },
@@ -54,7 +54,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, designer",
     "release": "2011",
     "url": "https://www.ipad-tipps.de/ipad-apps-oculus-testen-sie-ihre-sehscharfe-direkt-uber-das-ipad/",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC"],
     "imgs": ["ic"]
   },
@@ -68,7 +68,7 @@ const works: { [key: string]: Work } = {
     "role": "developer",
     "release": "2012",
     "url": "https://winners.lovieawards.com/#!y=2014&m=309",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC"],
     "imgs": ["dora", "download.jpeg", "nickjr-1.PNG"]
   },
@@ -82,7 +82,7 @@ const works: { [key: string]: Work } = {
     "role": "developer",
     "release": "2013",
     "url": "https://news.cision.com/de/viacomcbs-networks-gsa/r/mtv-baut-mobiles-tv-erlebnis-aus--lineare-premium-tv-kanale-erweitern-mtv-under-the-thumb-app,c9413537",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC"],
     "imgs": ["utt.jpeg", "thumb.jpg"]
   },
@@ -96,7 +96,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, idea",
     "release": "2014",
     "url": "https://www.kickstarter.com/projects/1732304023/formicarium-a-strategy-simulation-sandbox-game/?ref=kicktraq",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC", "C++"],
     "imgs": ["underground management_small", "fighting beetle", "screenshot_iniPad.jpg"]
   },
@@ -110,7 +110,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, architect",
     "release": "2015",
     "url": "https://www.mediaweek.com.au/viacom-launches-viacom-play-plex-suite-of-mobile-tv-apps/",
-    "thumbnail": "logo.jpg",
+    "thumbnail": "logo.webp",
     "langs": ["Swift"],
     "imgs": ["320x480bb.jpg", "iPhone2.jpg", "playplex.jpg"]
   },
@@ -124,7 +124,7 @@ const works: { [key: string]: Work } = {
     "role": "lead developer",
     "release": "2016",
     "url": "https://www.nickalive.net/2020/12/nickelodeon-benelux-to-discontinue.html?m=0",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["ObjC", "Swift"],
     "imgs": ["nickelodeon.jpg", "intl.jpg"]
   },
@@ -138,7 +138,7 @@ const works: { [key: string]: Work } = {
     "role": "CTO",
     "release": "2017",
     "url": "https://apps.apple.com/us/app/looc-mobile-eye-test/id405950873",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["Swift", "GLSL"],
     "imgs": ["test1", "test2"]
   },
@@ -152,7 +152,7 @@ const works: { [key: string]: Work } = {
     "role": "developer, designer, idea",
     "release": "2017",
     "url": "https://www.youtube.com/shorts/y8YNZEFhtME",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["Swift"],
     "imgs": ["screenshot"]
   },
@@ -166,7 +166,7 @@ const works: { [key: string]: Work } = {
     "role": "CTO",
     "release": "2019",
     "url": "https://apps.apple.com/us/app/my-looc-virtual-try-on/id1463380262",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["Swift"],
     "imgs": ["looc ar app"]
   },
@@ -194,7 +194,7 @@ const works: { [key: string]: Work } = {
     "role": "Client of LooC GmbH",
     "url": "https://play.google.com/store/apps/details?id=de.mom.grafix",
     "release": "2021",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["C#"],
     "imgs": ["unnamed.jpg", "unnamed-2.jpg"]
   },
@@ -208,7 +208,7 @@ const works: { [key: string]: Work } = {
     "role": "CTO",
     "url": "https://test.looc.io/tryon/index.html",
     "release": "2021",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["C#"],
     "imgs": ["screenshot.jpg"]
   },
@@ -222,7 +222,7 @@ const works: { [key: string]: Work } = {
     "role": "Client-project of LooC GmbH",
     "url": "https://www.reframd.com",
     "release": "2021",
-    "thumbnail": "Icon.jpg",
+    "thumbnail": "logo.webp",
     "langs": ["Swift"],
     "imgs": ["1242x2688bb.png"]
   },
@@ -236,7 +236,7 @@ const works: { [key: string]: Work } = {
     "role": "Client-project of LooC GmbH",
     "url": "https://apps.apple.com/app/edel-optics/id1594244005",
     "release": "2022",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["Swift"],
     "imgs": ["edel-optics-measure.png"]
   },
@@ -250,7 +250,7 @@ const works: { [key: string]: Work } = {
     "role": "developer",
     "url": "https://www.csail.mit.edu/news/magical-garden-gates-tower",
     "release": "2022",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["C#", "GLSL"],
     "imgs": ["largepic.jpg", "ar.jpg", "riddler.jpg"]
   },
@@ -264,7 +264,7 @@ const works: { [key: string]: Work } = {
     "role": "developer",
     "url": "https://letsrecast.ai/?ref=bersaelor",
     "release": "2023",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["TS", "JS"],
     "imgs": ["recast chrome extension.png", "recast SSR"]
   },
@@ -278,7 +278,7 @@ const works: { [key: string]: Work } = {
     "role": "architect, lead backend, lead frontend",
     "url": "https://urhere.art/",
     "release": "2023",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.webp",
     "langs": ["TS", "JS"],
     "imgs": ["urhere big", "urhere small"]
   },
@@ -292,9 +292,9 @@ const works: { [key: string]: Work } = {
     "role": "architect, lead backend, lead frontend",
     "url": "https://recompute.io/",
     "release": "2024",
-    "thumbnail": "logo.png",
+    "thumbnail": "logo.svg",
     "langs": ["TS", "JS", "Swift", "Python"],
-    "imgs": ["urhere big", "urhere small"]
+    "imgs": ["dashboard.jpg", "cost-comparison.png", "recompute.jpg"]
   }
 }
 

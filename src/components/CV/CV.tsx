@@ -19,6 +19,7 @@ import ChatBubbleRoundedIcon from '@suid/icons-material/ChatBubbleRounded';
 import TranslateRoundedIcon from '@suid/icons-material/TranslateRounded';
 import InterestsRoundedIcon from '@suid/icons-material/InterestsRounded';
 import { useI18n } from "../../i18n/context";
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const Background = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -99,6 +100,7 @@ const CV: Component = () => {
             </Section>
           </Box>
         </Paper>
+        <LanguageSwitcher />
       </Container>
     </>
   );

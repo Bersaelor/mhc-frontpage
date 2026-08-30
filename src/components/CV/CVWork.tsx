@@ -56,7 +56,7 @@ const CVWork: Component<Props> = (props) => {
             {props.work.title}
           </JobTitle>
           <Typography variant="body2" color="text.primary">
-            {props.work.text[i18n.language]}
+            {props.work.text[i18n.language] ?? props.work.text['en']}
           </Typography>
           <SubTitle mt={0.5}>
             {i18n.t("cv.works.techs")}:

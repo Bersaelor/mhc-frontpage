@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Source Code Pro";
-	src: url(./assets/fonts/SourceCodePro-VariableFont_wght.ttf); 
+	src: url(./assets/fonts/SourceCodePro-VariableFont_wght.ttf);
   font-style: normal;
 }
 
@@ -19,13 +19,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   overflow: overlay;
-  
+
   scrollbar-width: thin;
   scrollbar-color: #f8f6e5 transparent;
 }
 
-.header h1 {
-  margin: 0;
+/* Lets the footer sit at the bottom of the viewport on short pages
+   without being taken out of flow (see Footer.tsx). */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body::-webkit-scrollbar {
@@ -33,11 +37,42 @@ body::-webkit-scrollbar {
 }
 
 /* body::-webkit-scrollbar-track {
-  background: orange; 
+  background: orange;
 } */
 
 body::-webkit-scrollbar-thumb {
   background-color: #f8f6e599;    /* color of the scroll thumb */
   border-radius: 3px;       /* roundness of the scroll thumb */
   border: 2px solid black;  /* creates padding around scroll thumb */
+}
+
+/* The legal pages are plain HTML inside a Container, so their links would
+   otherwise fall back to the UA default #0000EE - about 2.1:1 against the
+   near-black starfield. */
+a {
+  color: #c1dff5;
+}
+
+a:visited {
+  color: #d9c9e8;
+}
+
+/* Keyboard focus needs to be visible against the dark background. */
+:focus-visible {
+  outline: 2px solid #eee8bf;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* The starfield, the tile hover tilts and the modal transition all animate.
+   Honour a reduced-motion preference across the board. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
