@@ -20,6 +20,7 @@ import TranslateRoundedIcon from '@suid/icons-material/TranslateRounded';
 import InterestsRoundedIcon from '@suid/icons-material/InterestsRounded';
 import { useI18n } from "../../i18n/context";
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import Stack from '@suid/material/Stack';
 
 const Background = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -100,7 +101,9 @@ const CV: Component = () => {
             </Section>
           </Box>
         </Paper>
-        <LanguageSwitcher />
+        <Stack direction='row' justifyContent='center' py={2} mx={2}>
+          <LanguageSwitcher />
+        </Stack>
       </Container>
     </>
   );

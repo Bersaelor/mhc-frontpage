@@ -6,6 +6,7 @@ import { Box } from "@suid/material"
 import GradientTitle from '../GradientTitle/GradientTitle';
 import MailOutlineRoundedIcon from '@suid/icons-material/MailOutlineRounded';
 import { useI18n } from '../../i18n/context';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const StickyTop = styled(Box)(({ theme }) => ({
   position: 'sticky',
@@ -48,14 +49,23 @@ const Topheader: Component = () => {
             </GradientTitle>
           </ScrollTopButton>
 
-          <GradientTitle variant="h6" component='a' color="#e8eaf8" href="mailto:konrad@mathheartcode.com"
-            sx={{ WebkitFilter: 'drop-shadow(0px 1px 2px #000)'}}
-          >
-            <Stack direction='row' gap={1} alignItems='center'>
-              <MailOutlineRoundedIcon aria-hidden="true" />
-              <span>{i18n.t('home.nav.contact')}</span>
-            </Stack>
-          </GradientTitle>
+          <Stack direction='row' gap={2} alignItems='center'>
+            <LanguageSwitcher onDark />
+
+            <GradientTitle variant="h6" component='a' color="#e8eaf8" href="mailto:konrad@mathheartcode.com"
+              aria-label={i18n.t('home.nav.contact')}
+              sx={{ WebkitFilter: 'drop-shadow(0px 1px 2px #000)'}}
+            >
+              <Stack direction='row' gap={1} alignItems='center'>
+                <MailOutlineRoundedIcon aria-hidden="true" />
+                {/* the wordmark, switcher and this label together overflow a
+                    narrow phone; the icon plus aria-label carry it there */}
+                <Box component='span' sx={{ display: { xs: 'none', sm: 'inline' } }}>
+                  {i18n.t('home.nav.contact')}
+                </Box>
+              </Stack>
+            </GradientTitle>
+          </Stack>
         </Stack>
       </Container>
     </StickyTop>

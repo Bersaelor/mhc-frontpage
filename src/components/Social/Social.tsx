@@ -6,7 +6,6 @@ import GradientTitle from '../GradientTitle/GradientTitle';
 import MailOutlineRoundedIcon from '@suid/icons-material/MailOutlineRounded';
 import Stack from '@suid/material/Stack';
 import { useI18n } from '../../i18n/context';
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 import github from './github.svg'
 import linkedin from './linkedin.svg'
@@ -64,9 +63,6 @@ const Social: Component = () => {
               <span>Twitter</span>
             </Stack>
           </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <LanguageSwitcher />
         </Grid>
       </Grid>
     </Box>
