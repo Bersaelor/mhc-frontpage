@@ -6,6 +6,8 @@ import Typography from '@suid/material/Typography';
 import Grid from '@suid/material/Grid';
 import Stack from '@suid/material/Stack';
 
+import talks from '../../data/talks';
+
 const Talk = styled(Typography)(({ theme }) => ({
   fontSize: '1.1rem',
   fontWeight: '400',
@@ -13,34 +15,10 @@ const Talk = styled(Typography)(({ theme }) => ({
   textDecoration: 'none',
 }));
 
-const talks = [
-  {
-    year: "Brooklyn 2017",
-    conf_url: "http://2017.funswiftconf.com",
-    name: "Functional Swift",
-    title: "Growing trees with recursive enums in Swift",
-    url: "https://www.youtube.com/embed/CwcEjxRtn18",
-  },
-  {
-    year: "St. Petersburg 2018",
-    conf_url: "https://mobiusconf.com/en/",
-    name: "Mobius Conf",
-    title: "How to fit a million stars into an iPhone",
-    url: "https://www.youtube.com/embed/51PJjrh9yTA",
-  },
-  {
-    year: "Berlin 2019",
-    conf_url: "https://www.serversideswift.info",
-    name: "Server Side Swift",
-    title: "How server side and mobile Swift can benefit from each other",
-    url: "https://www.youtube.com/embed/xA3ZYt5S6iA",
-  },
-];
-
 const CVTalks: Component = () => {
 
   return (
-    <For each={talks.reverse()}>
+    <For each={talks}>
       {(talk) =>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={3}>
@@ -50,11 +28,16 @@ const CVTalks: Component = () => {
           </Grid>
           <Grid item xs={12} sm={9}>
             <Stack mb={2} direction='column'>
-              <Talk component='a' href={talk.url}>
+              <Talk
+                component='a'
+                href={`https://www.youtube.com/watch?v=${talk.videoId}`}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {talk.title}
               </Talk>
-              <CompanyLink href={talk.conf_url}>
-                {talk.name}
+              <CompanyLink href={talk.conferenceUrl}>
+                {talk.conference}
               </CompanyLink>
             </Stack>
           </Grid>

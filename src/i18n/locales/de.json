@@ -1,0 +1,41 @@
+{
+  "cv.header.subtitle": "IT Berater / CTO",
+  "cv.section.profile": "Profil",
+  "cv.section.career": "Berufserfahrung",
+  "cv.section.projects": "Projekte",
+  "cv.section.education": "Ausbildung",
+  "cv.section.talks": "Konferenzen",
+  "cv.section.languages": "Sprachen",
+  "cv.section.interests": "Interessen",
+  "cv.date.present": "Jetzt",
+  "cv.profile.text": "Entwickler & Software-Architekt mit 10+ Jahren Erfahrung in der Entwicklung von mobilen, Web- und Serveranwendungen. Mit der Vielzahl an Softwarewerkzeugen finde ich die effizientesten Lösungen für die Produktanforderungen meiner Kunden und arbeite gerne mit Menschen aus verschiedenen Bereichen zusammen. Ich liebe es besonders, wenn ich meinen Hintergrund in der Mathematik in Problemen wie 3D-Algebra, maschinellem Lernen oder Wahrscheinlichkeitstheorie anwenden kann.",
+  "cv.works.techs": "Tech-Stack",
+  "cv.works.languages": "Sprachen",
+  "cv.works.role": "Rolle",
+
+  "home.nav.top": "Nach oben",
+  "home.nav.contact": "Kontakt",
+  "home.intro.headline": "mathHeartCode entwickelt Software.",
+  "home.intro.what": "iOS, macOS, Web und Cloud – von App-Store-Produkten bis zu Backend-Systemen.",
+  "home.intro.who": "Die mathHeartCode UG (haftungsbeschränkt) wird von Konrad Feiler in Berlin geführt. Dienstleistungen auf Anfrage.",
+  "home.photo.alt": "Konrad Feiler",
+
+  "home.section.projects": "Bisherige & aktuelle Projekte",
+  "home.section.technologies": "Technologien",
+  "home.section.talks": "Vorträge",
+  "home.section.contact": "Kontakt",
+
+  "home.works.open": "{{title}} ({{release}}) – Projektdetails anzeigen",
+  "home.works.close": "Projektdetails schließen",
+  "home.works.newTab": "wird in einem neuen Tab geöffnet",
+  "home.gallery.group": "Screenshots zu {{title}}",
+  "home.gallery.alt": "{{title}}, Screenshot {{index}} von {{total}}",
+  "home.gallery.dot": "Screenshot {{index}} von {{total}} anzeigen",
+
+  "home.talks.play": "„{{title}}“ auf YouTube abspielen – {{conference}}, {{year}}",
+  "home.talks.loads": "Wird von YouTube geladen",
+
+  "home.footer.imprint": "Impressum",
+  "home.footer.privacy": "Datenschutzerklärung",
+  "home.language.label": "Sprache"
+}

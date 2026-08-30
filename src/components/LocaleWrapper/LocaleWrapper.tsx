@@ -1,37 +1,33 @@
 import type { ParentComponent } from 'solid-js';
-import i18n from '../../i18n/config';
-import {onMount, createSignal} from "solid-js";
-import {Show} from "solid-js";
+import { createEffect } from 'solid-js';
+import i18next from 'i18next';
+import '../../i18n/config';
 import I18nProvider from "../I18nProvider/I18nProvider";
-import i18next from "i18next";
-import {createI18n} from "../../i18n/context";
-import LanguageSwitcher from '../CV/LanguageSwitcher';
+import { createI18n, SetLanguageContext } from "../../i18n/context";
 
 const LocaleWrapper: ParentComponent = (props) => {
-  const [loaded, setLoaded] = createSignal(false);
   const [i18nState, updatei18nState] = createI18n(i18next);
 
-  onMount(async () => {
-    await i18n;
-    updatei18nState(i18next);
-    setLoaded(true);
-  });
-
+  // Translations are bundled, so i18next is ready synchronously and there is
+  // nothing to wait for before the first paint.
   const handleOnChange = (lang: string) => {
     i18next.changeLanguage(lang).then(() => {
       updatei18nState(i18next);
     })
   }
 
+  // Screen readers pick pronunciation from this, so it has to track the
+  // language actually being shown.
+  createEffect(() => {
+    document.documentElement.lang = i18nState.language ?? 'en';
+  });
+
   return (
-    <Show
-      when={loaded()}
-    >
+    <SetLanguageContext.Provider value={handleOnChange}>
       <I18nProvider i18n={i18nState}>
         {props.children}
-        <LanguageSwitcher onChange={handleOnChange} />
       </I18nProvider>
-    </Show>
+    </SetLanguageContext.Provider>
   );
 }
 

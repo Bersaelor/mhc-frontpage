@@ -2,8 +2,9 @@ import type { Component } from 'solid-js';
 import { For } from 'solid-js';
 import { styled } from '@suid/material/styles';
 import type { Work } from '../../types/Work';
+import { useI18n } from '../../i18n/context';
 
-const Cell = styled('div')(({ theme }) => ({
+const Cell = styled('button')(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -15,9 +16,20 @@ const Cell = styled('div')(({ theme }) => ({
 
   cursor: 'pointer',
 
+  // reset the button chrome; this is a bare image tile
+  padding: 0,
+  border: 0,
+  background: 'none',
+  font: 'inherit',
+  color: 'inherit',
+
   '&:hover': {
     transition: 'all 0.3s linear',
     transform: 'scale(0.95)',
+    zIndex: 1,
+  },
+
+  '&:focus-visible': {
     zIndex: 1,
   },
 }))
@@ -73,12 +85,24 @@ type Props = {
 }
 
 const WorkCell: Component<Props> = (props) => {
+  const i18n = useI18n();
+
   return (
-    <Cell onClick={() => props.onWorkSelected(props.key)}>
+    <Cell
+      type="button"
+      onClick={() => props.onWorkSelected(props.key)}
+      aria-label={i18n.t('home.works.open', { title: props.work.title, release: props.work.release })}
+    >
       <For each={[1, 2, 3, 4, 5, 6, 7, 8, 9]}>
-        {(i) => <Tilt />}
+        {(i) => <Tilt aria-hidden="true" />}
       </For>
-      <ResponsiveImage class='tilt-box' src={`imgs/${props.key}/${props.work.thumbnail}` } alt={props.work.title} />
+      <ResponsiveImage
+        class='tilt-box'
+        src={`imgs/${props.key}/${props.work.thumbnail}`}
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
     </Cell>
   );
 };

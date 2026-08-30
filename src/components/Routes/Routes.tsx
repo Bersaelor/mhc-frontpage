@@ -1,6 +1,7 @@
 import { CssBaseline } from "@suid/material";
 import { Routes, Route } from "@solidjs/router";
 import { lazy } from "solid-js";
+import LocaleWrapper from "../LocaleWrapper/LocaleWrapper";
 
 const Home = lazy(() => import("../Home/Home"));
 const CVRoute = lazy(() => import("../CV/CVRoute"));
@@ -11,12 +12,14 @@ export default function AppRoutes() {
   return (
     <>
       <CssBaseline />
-      <Routes>
-        <Route path="/" component={Home} />
-        <Route path="/cv" component={CVRoute}/>
-        <Route path="/imprint" component={Imprint} />
-        <Route path="/privacy" component={Privacy} />
-      </Routes>
+      <LocaleWrapper>
+        <Routes>
+          <Route path="/" component={Home} />
+          <Route path="/cv" component={CVRoute}/>
+          <Route path="/imprint" component={Imprint} />
+          <Route path="/privacy" component={Privacy} />
+        </Routes>
+      </LocaleWrapper>
     </>
   );
 }

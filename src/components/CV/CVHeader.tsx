@@ -81,19 +81,19 @@ const CVHeader: Component = () => {
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://github.com/Bersaelor">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="16px" src={github} alt="Github icon" />
+                <img width={16} height={16} src={github} alt="Github icon" />
                 <span>github.com/Bersaelor</span>
               </Stack>
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://www.linkedin.com/in/konrad-feiler/">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="16px" src={linkedin} alt="LinkedIn icon" />
+                <img width={16} height={16} src={linkedin} alt="LinkedIn icon" />
                 <span>linkedin.com/in/konrad-feiler</span>
               </Stack>
             </StyledLink>
             <StyledLink ml={'2px'} component='a' href="https://twitter.com/bersaelor">
               <Stack direction='row' gap={1} justifyContent='center' alignItems='center'>
-                <img height="16px" src={twitter} alt="Twitter icon" />
+                <img width={16} height={16} src={twitter} alt="Twitter icon" />
                 <span>twitter.com/bersaelor</span>
               </Stack>
             </StyledLink>

@@ -1,16 +1,12 @@
 import type { Component } from 'solid-js';
 import { For } from 'solid-js';
-import { styled } from '@suid/material/styles';
 import { ToggleButton, ToggleButtonGroup } from "@suid/material";
 import { Stack } from '@suid/material';
-import { useI18n } from "../../i18n/context";
+import { useI18n, useSetLanguage } from "../../i18n/context";
 
-type Props = {
-  onChange: (lang: string) => void,
-}
-
-const LanguageSwitcher: Component<Props> = (props) => {
+const LanguageSwitcher: Component = () => {
   const i18n = useI18n();
+  const setLanguage = useSetLanguage();
   const availableLocales = () => [
     { title: 'EN', code: 'en' },
     { title: 'DE', code: 'de' }
@@ -23,13 +19,17 @@ const LanguageSwitcher: Component<Props> = (props) => {
         size="small"
         value={i18n.language}
         exclusive
+        aria-label={i18n.t('home.language.label')}
         onChange={(event, newLang) => {
-          props.onChange(newLang);
+          // null when the active button is clicked again - keep current language
+          if (newLang) setLanguage(newLang);
         }}
       >
         <For each={availableLocales()}>
           {(item) =>
-          <ToggleButton value={item.code}>{item.title}</ToggleButton>
+            <ToggleButton value={item.code} aria-label={item.title}>
+              {item.title}
+            </ToggleButton>
           }
         </For>
       </ToggleButtonGroup>
