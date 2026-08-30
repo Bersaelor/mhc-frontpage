@@ -27,7 +27,7 @@ const Footer: Component = () => {
           Privacy Declaration
         </GradientTitle>
         <GradientTitle variant='subtitle2'>
-          © 2025 mathHeartCode UG(haftungsbeschränkt)
+          © 2025 mathHeartCode UG (haftungsbeschränkt)
         </GradientTitle>
       </Stack>
     </StickyFooter>

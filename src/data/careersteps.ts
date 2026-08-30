@@ -20,7 +20,7 @@ const steps: CareerStep[] = [
       "en": "App Creator & IT Consultant",
       "de": "App Entwickler & IT Berater"
     },
-    "company": "mathHeartCode UG(haftungsbeschränkt)",
+    "company": "mathHeartCode UG (haftungsbeschränkt)",
     "url": "https://www.mathheartcode.com",
     "description": {
       "en": "More apps now under my own company.",

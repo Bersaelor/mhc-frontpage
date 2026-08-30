@@ -17,7 +17,7 @@ const PersonHeader: Component = () => {
               Hi, my name is Konrad.
             </Typography>
             <Typography variant="h6" sx={{ maxWidth: '400px' }}>
-              Through my company <b>mathHeartCode UG(haftungsbeschränkt)</b> I offer services as a software developer & consultant.
+              Through my company <b>mathHeartCode UG (haftungsbeschränkt)</b> I offer services as a software developer & consultant.
             </Typography>
           </div>
         </Stack>

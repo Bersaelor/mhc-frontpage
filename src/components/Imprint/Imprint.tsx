@@ -15,14 +15,14 @@ const Imprint: Component = () => {
 
       <h1>Impressum</h1>
 
-      <p>mathHeartCode UG(haftungsbeschränkt)<br />
+      <p>mathHeartCode UG (haftungsbeschränkt)<br />
         Schönhauser Allee 133<br />
         10437 Berlin</p>
 
       <p>Handelsregister: HRB 159169 B<br />
         Registergericht: Amtsgericht Charlottenburg</p>
 
-      <p><strong>Vertreten durch:</strong><br />
+      <p><strong>Geschäftsführer:</strong><br />
         Konrad Feiler</p>
 
       <h2>Kontakt</h2>
@@ -30,11 +30,8 @@ const Imprint: Component = () => {
         E-Mail: imprint@mathheartcode.com</p>
 
       <h2>Umsatzsteuer-ID</h2>
-      <p>Umsatzsteuer-Identifikationsnummer gemäß 27 a Umsatzsteuergesetz:<br />
+      <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br />
         DE295957776</p>
-
-      <h2>EU-Streitschlichtung</h2>
-      <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br /> Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
 
       <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2><p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 
