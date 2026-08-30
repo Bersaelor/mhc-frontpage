@@ -1,7 +1,7 @@
 import type { ParentComponent } from 'solid-js';
 import { createEffect } from 'solid-js';
 import i18next from 'i18next';
-import '../../i18n/config';
+import { normalizeLanguage } from '../../i18n/config';
 import I18nProvider from "../I18nProvider/I18nProvider";
 import { createI18n, SetLanguageContext } from "../../i18n/context";
 
@@ -11,7 +11,7 @@ const LocaleWrapper: ParentComponent = (props) => {
   // Translations are bundled, so i18next is ready synchronously and there is
   // nothing to wait for before the first paint.
   const handleOnChange = (lang: string) => {
-    i18next.changeLanguage(lang).then(() => {
+    i18next.changeLanguage(normalizeLanguage(lang)).then(() => {
       updatei18nState(i18next);
     })
   }
