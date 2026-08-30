@@ -37,7 +37,7 @@ const Footer: Component = () => {
           </GradientTitle>
         </A>
         <GradientTitle variant='subtitle2' component='p'>
-          © 2025 mathHeartCode UG (haftungsbeschränkt)
+          © 2026 mathHeartCode UG (haftungsbeschränkt)
         </GradientTitle>
       </Stack>
     </StickyFooter>
