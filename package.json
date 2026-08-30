@@ -5,7 +5,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && find dist -name '.DS_Store' -delete",
     "serve": "vite preview",
     "deploy": "aws s3 sync dist/ s3://mhc-frontpage-277707102509 --delete --region eu-central-1 --profile mhc",
     "invalidate": "aws cloudfront create-invalidation --distribution-id E2RZRHUN4LJWNO --paths '/*' --profile mhc"
