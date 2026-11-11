@@ -295,6 +295,20 @@ const works: { [key: string]: Work } = {
     "thumbnail": "logo.svg",
     "langs": ["TS", "JS", "Swift", "Python"],
     "imgs": ["dashboard.jpg", "cost-comparison.png", "recompute.jpg"]
+  },
+  "pairs": {
+    "title": "Pairs: Photo Matching Game",
+    "text": {
+      "en": "Family memory game built from your own photos, for iPhone, iPad, Mac and Vision Pro. Play solo, with up to four players on one device, or against MEMORAX, a forgetful on-device robot. Themed decks are painted by an on-device diffusion model or Image Playground. No account, no ads, and photos never leave the device.",
+      "de": "Merkspiel für die ganze Familie aus den eigenen Fotos, für iPhone, iPad, Mac und Vision Pro. Allein, mit bis zu vier Personen an einem Gerät oder gegen MERKORAX, einen vergesslichen Roboter, der auf dem Gerät läuft. Kartensets zu einem Thema malt ein Diffusionsmodell direkt auf dem Gerät oder Image Playground. Kein Konto, keine Werbung, und die Fotos verlassen nie das Gerät."
+    },
+    "techs": ["SwiftUI", "SwiftData", "Core AI", "Image Playground", "AWS Lambda"],
+    "role": "developer, designer, idea",
+    "url": "https://pairs.mathheartcode.com/",
+    "release": "2026",
+    "thumbnail": "logo.webp",
+    "langs": ["Swift", "TS"],
+    "imgs": ["story-photos.jpg", "home.jpg", "match.jpg", "memorax.jpg"]
   }
 }
 
